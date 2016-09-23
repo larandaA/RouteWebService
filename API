@@ -1,0 +1,121 @@
+-------- Representations -----------------
+
+POINT SHORT REPRESENTATION
+<point>
+  <name></name>
+  <link></link>
+</point>
+
+RELATION SHORT REPRESENTATION
+<relation>
+  <destination>
+    <point short representation>
+  </destination>
+  <link></link>
+</relation>
+
+POINT FULL REPRESENTATION
+<point>
+  <name></name>
+  <relations>
+    <relation short representation>
+    <relation short representation>
+    ...
+    <relation short representation>
+  <relations>
+</point>
+
+RELATION FULL REPRESENTATION
+<relation>
+  <source>
+    <point short representation>
+  </source>
+  <destination>
+    <point short representation>
+  </destination>
+  <cost></cost>
+  <duration></duration>
+</relation>
+
+POINTS COLLECTION REPRESENTATION
+<points>
+  <point short representation>
+  <point short representation>
+  ...
+  <point short representation>
+</points>
+
+ROUTE REPRESENTATION
+<route>
+  <source>
+    <point short representation>
+  </source>
+  <destination>
+    <point short representation>
+  </destination>
+  <cost></cost>
+  <duration></duration>
+  <relations>
+    <relation short representation>
+    <relation short representation>
+    ...
+    <relation short representation>
+  </relations>
+</route>
+
+-------- Requests Description ------------
+
+GET /points/
+Response : points collection representation
+
+POST /points/ 
+Request: <point><name>New point name</name></point>
+Response: 
+  201 Created or 409 Already exists
+  point full representation
+  
+GET /points/point_id
+Response:
+  404 Not found or point full representation
+  
+DELETE /points/point_id
+Response:
+  404 Not found or point full representation
+  
+PUT /points/point_id
+Request: <point><name>Point new name</name></point>
+Response:
+  404 Not found or point full representation
+  
+GET /relations/relation_id
+Response:
+  404 Not found or relation full representation
+  
+DELETE /relations/relation_id
+Response:
+  404 Not found or relation full representation
+  
+PUT /relations/relation_id
+Request: 
+  <relation>
+    <cost></cost>
+    <duration></duration>
+  </relation>
+Response:
+  404 Not found or relation full representation
+  
+POST /relations/
+Request: relation full representation
+Response: 
+  201 Created or 409 Already exists
+  relation full representation
+  
+GET /route/
+Request: 
+  <route>
+    <source></source>
+    <destination></destination>
+  </route>
+Response: 404 Not found or
+  route representation
+  
