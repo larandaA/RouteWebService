@@ -1,3 +1,7 @@
+Здесь подходит REST, так как передаются представления ресурсов, могут кэшироваться ответы сервера. 
+Однако REST с некоторыми поправками, так как не все ресурсы идентифицируются, а также сообщения не являются самоописывающимися.
+
+
 -------- Representations -----------------
 
 POINT SHORT REPRESENTATION
@@ -71,12 +75,12 @@ Response : points collection representation
 POST /points/ 
 Request: <point><name>New point name</name></point>
 Response: 
-  201 Created or 409 Already exists
-  point full representation
+  201 Created or 409 Already exists; Location: /points/point_id
+  point short representation
   
-GET /points/point_id
+GET /points/point_id 
 Response:
-  404 Not found or point full representation
+  404 Not found or point full representation, Location: /points/point_id
   
 DELETE /points/point_id
 Response:
@@ -85,11 +89,11 @@ Response:
 PUT /points/point_id
 Request: <point><name>Point new name</name></point>
 Response:
-  404 Not found or point full representation
+  404 Not found or point short representation, Location: /points/point_id
   
 GET /relations/relation_id
 Response:
-  404 Not found or relation full representation
+  404 Not found or relation full representation, Location: /points/relation_id
   
 DELETE /relations/relation_id
 Response:
@@ -102,19 +106,23 @@ Request:
     <duration></duration>
   </relation>
 Response:
-  404 Not found or relation full representation
+  404 Not found or relation full representation, Location: /points/relation_id
   
 POST /relations/
 Request: relation full representation
 Response: 
-  201 Created or 409 Already exists
+  201 Created or 409 Already exists; Location: /points/relation_id
   relation full representation
   
 GET /route/
 Request: 
   <route>
-    <source></source>
-    <destination></destination>
+    <source>
+      <point><name> </name></point>
+    </source>
+    <destination>
+      <point><name> </name></point>
+    </destination>
   </route>
 Response: 404 Not found or
   route representation
