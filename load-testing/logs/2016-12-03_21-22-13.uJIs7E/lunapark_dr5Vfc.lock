@@ -1,0 +1,134 @@
+[tank]
+uuid = 339bff11-aeb9-48a7-a470-e866c6f3f66c
+pid = 17703
+lock_dir = /var/lock
+plugin_rcheck = yandextank.plugins.ResourceCheck
+plugin_shellexec = yandextank.plugins.ShellExec
+plugin_phantom = yandextank.plugins.Phantom
+plugin_aggregate = yandextank.plugins.Aggregator
+plugin_autostop = yandextank.plugins.Autostop
+plugin_monitoring = yandextank.plugins.Monitoring
+plugin_console = yandextank.plugins.Console
+plugin_tips = yandextank.plugins.TipsAndTricks
+plugin_rcassert = yandextank.plugins.RCAssert
+artifacts_base_dir = logs
+plugin_overload = yandextank.plugins.Overload
+flush_config_to = 
+artifacts_dir = 
+taskset_path = taskset
+affinity = 
+
+[bfg]
+ammo_type = caseline
+
+[overload]
+api_address = https://overload.yandex.net/
+token_file = /tmp/token.txt
+api_timeout = 30
+task = DEFAULT
+job_name = none
+job_dsc = 
+notify = 
+ver = 
+component = 
+regress = 0
+operator = 
+copy_config_to = 
+jobno_file = 
+jobno = 3525
+
+[phantom]
+address = 127.0.0.1
+port = 80
+rps_schedule = line(100, 2000, 180s)
+uris = /hello_world
+config = 
+phantom_path = phantom
+enum_ammo = False
+buffered_seconds = 2
+exclude_markers = []
+affinity = 
+phout_file = /home/user/route-web-service/RouteWebService/load-testing/logs/phout_KXkXAu.log
+threads = 1
+phantom_modules_path = /usr/lib/phantom
+additional_libs = 
+writelog = none
+timeout = 11s
+ssl = 0
+tank_type = http
+instances = 1000
+gatling_ip = 
+method_prefix = method_stream
+method_options = 
+source_log_prefix = 
+phantom_http_line = 
+phantom_http_field_num = 
+phantom_http_field = 
+phantom_http_entity = 
+connection_test = 1
+client_cipher_suites = 
+client_certificate = 
+client_key = 
+ammofile = 
+ammo_type = 
+loop = -1
+ammo_limit = -1
+instances_schedule = 
+headers = 
+header_http = 1.0
+autocases = 0
+use_caching = 1
+file_cache = 8192
+cache_dir = logs
+force_stepping = 0
+stpd_file = logs/_264be4e4662d55ea78675c9bc93d126b.stpd
+chosen_cases = 
+
+[meta]
+job_name = none
+job_dsc = 
+task = dir
+ver = 
+copy_config_to = config_copy
+
+[rcheck]
+interval = 10s
+disk_limit = 2048
+mem_limit = 512
+
+[shellexec]
+catch_out = False
+prepare = 
+start = 
+end = 
+poll = 
+post_process = 
+
+[aggregator]
+verbose_histogram = 0
+
+[autostop]
+autostop = 
+report_file = autostop_report.txt
+
+[monitoring]
+config = auto
+default_target = localhost
+ssh_timeout = 5s
+config_contents = <Monitoring>
+		<Host address="[target]" />
+	</Monitoring>
+
+[console]
+info_panel_width = 33
+short_only = 0
+disable_all_colors = 0
+disable_colors = 
+
+[tips]
+disable = 0
+
+[rcassert]
+pass = 
+fail_code = 10
+
