@@ -1,0 +1,1157 @@
+2016-12-02 20:10:09,871 - agent.py - __main__ - INFO - Mounts: ['rootfs / rootfs rw 0 0\n', 'sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0\n', 'proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0\n', 'udev /dev devtmpfs rw,relatime,size=505080k,nr_inodes=126270,mode=755 0 0\n', 'devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0\n', 'tmpfs /run tmpfs rw,nosuid,noexec,relatime,size=102660k,mode=755 0 0\n', '/dev/disk/by-uuid/aa32f059-481a-4bef-b72b-7a3ce01ecd68 / ext4 rw,relatime,errors=remount-ro,data=ordered 0 0\n', 'none /sys/fs/fuse/connections fusectl rw,relatime 0 0\n', 'none /sys/kernel/debug debugfs rw,relatime 0 0\n', 'none /sys/kernel/security securityfs rw,relatime 0 0\n', 'none /run/lock tmpfs rw,nosuid,nodev,noexec,relatime,size=5120k 0 0\n', 'none /run/shm tmpfs rw,nosuid,nodev,relatime 0 0\n']
+2016-12-02 20:10:09,871 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram0
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram1
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram2
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram3
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram4
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram5
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram6
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram7
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram8
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram9
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/loop0
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/loop1
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/loop2
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/loop3
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/loop4
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/loop5
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/loop6
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/loop7
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram10
+2016-12-02 20:10:09,872 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram11
+2016-12-02 20:10:09,873 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram12
+2016-12-02 20:10:09,873 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram13
+2016-12-02 20:10:09,873 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram14
+2016-12-02 20:10:09,873 - agent.py - __main__ - DEBUG - Checking /sys/devices/virtual/block/ram15
+2016-12-02 20:10:09,873 - agent.py - __main__ - INFO - Devs: ['sda1']
+2016-12-02 20:10:09,873 - agent.py - __main__ - INFO - Start agent at host: ubuntu
+
+2016-12-02 20:10:09,874 - agent.py - __main__ - DEBUG - Caller timestamp: 1480698609
+2016-12-02 20:10:09,874 - agent.py - __main__ - INFO - Agent params: 1.0, 127.0.0.1
+2016-12-02 20:10:09,874 - agent.py - __main__ - DEBUG - Check for stdin shutdown command
+2016-12-02 20:10:09,874 - agent.py - __main__ - INFO - Running startup commands
+2016-12-02 20:10:09,874 - agent.py - __main__ - INFO - Start polling thread
+2016-12-02 20:10:09,874 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:09,874 - agent.py - __main__ - DEBUG - start;127.0.0.1;1480698609;Memory_total;Memory_used;Memory_free;Memory_shared;Memory_buff;Memory_cached;Net_tx;Net_rx;Net_recv;Net_send;Disk_read;Disk_write;System_csw;System_int;CPU_user;CPU_nice;CPU_system;CPU_idle;CPU_iowait;CPU_irq;CPU_softirq;System_numproc;System_numthreads
+2016-12-02 20:10:09,875 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:09,875 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:09,876 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       791      0      0 0           487      0      0      0 BMRU
+lo        65536 0       185      0      0 0           185      0      0      0 LRU
+2016-12-02 20:10:09,876 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['1020', '722']
+2016-12-02 20:10:09,876 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:09,886 - agent.py - __main__ - DEBUG - Recv/send: 57027/57027
+2016-12-02 20:10:09,887 - agent.py - __main__ - DEBUG - Recv/send: 62274/61806
+2016-12-02 20:10:09,887 - agent.py - __main__ - DEBUG - Recv/send: 138288/132088
+2016-12-02 20:10:09,887 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['', '']
+2016-12-02 20:10:09,887 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698609', '1002.52734375', '100.58984375', '80.01171875', '0', '8.5859375', '813.33984375', '0', '0', '', '', '', '', '', '', '', '', '', '', '', '', '', '83', '108']
+2016-12-02 20:10:09,887 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:09,887 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698609;1002.52734375;100.58984375;80.01171875;0;8.5859375;813.33984375;0;0;;;;;;;;;;;;;;83;108
+2016-12-02 20:10:10,889 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:10,889 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:10,890 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       819      0      0 0           538      0      0      0 BMRU
+lo        65536 0      1149      0      0 0          1149      0      0      0 LRU
+2016-12-02 20:10:10,890 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['2012', '1737']
+2016-12-02 20:10:10,890 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:10,893 - agent.py - __main__ - DEBUG - Recv/send: 122355/122355
+2016-12-02 20:10:10,893 - agent.py - __main__ - DEBUG - Recv/send: 127602/127134
+2016-12-02 20:10:10,893 - agent.py - __main__ - DEBUG - Recv/send: 205444/208096
+2016-12-02 20:10:10,893 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['67156', '76008']
+2016-12-02 20:10:10,894 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698610', '1002.52734375', '109.91015625', '69.8828125', '0', '8.5859375', '814.1484375', '992', '1015', '67156', '76008', '770048', '0', '3751.0', '722.0', '2.27272727273', '0.0', '6.81818181818', '81.8181818182', '9.09090909091', '0.0', '0.0', '85', '114']
+2016-12-02 20:10:10,894 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:10,894 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698610;1002.52734375;109.91015625;69.8828125;0;8.5859375;814.1484375;992;1015;67156;76008;770048;0;3751.0;722.0;2.27272727273;0.0;6.81818181818;81.8181818182;9.09090909091;0.0;0.0;85;114
+2016-12-02 20:10:10,894 - agent.py - __main__ - DEBUG - Sleep for: 0.994593858719 (delta 0.00540614128113)
+2016-12-02 20:10:10,894 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:10,894 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:10,896 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       819      0      0 0           538      0      0      0 BMRU
+lo        65536 0      1163      0      0 0          1163      0      0      0 LRU
+2016-12-02 20:10:10,896 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['2026', '1751']
+2016-12-02 20:10:10,896 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:10,899 - agent.py - __main__ - DEBUG - Recv/send: 123559/123559
+2016-12-02 20:10:10,899 - agent.py - __main__ - DEBUG - Recv/send: 128806/128338
+2016-12-02 20:10:10,899 - agent.py - __main__ - DEBUG - Recv/send: 206648/209300
+2016-12-02 20:10:10,899 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['1204', '1204']
+2016-12-02 20:10:10,899 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:10,899 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698610', '1002.52734375', '110.59375', '69.19921875', '0', '8.5859375', '814.1484375', '14', '14', '1204', '1204', '0', '0', '55.0', '6.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:10,900 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:10,900 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698610;1002.52734375;110.59375;69.19921875;0;8.5859375;814.1484375;14;14;1204;1204;0;0;55.0;6.0;;;;;;;;84;113
+2016-12-02 20:10:10,900 - agent.py - __main__ - DEBUG - Sleep for: 0.993655920029 (delta 0.00634407997131)
+2016-12-02 20:10:11,895 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:11,896 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:11,897 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       846      0      0 0           590      0      0      0 BMRU
+lo        65536 0      2567      0      0 0          2567      0      0      0 LRU
+2016-12-02 20:10:11,897 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['3457', '3207']
+2016-12-02 20:10:11,897 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:11,900 - agent.py - __main__ - DEBUG - Recv/send: 218647/218647
+2016-12-02 20:10:11,900 - agent.py - __main__ - DEBUG - Recv/send: 223894/223426
+2016-12-02 20:10:11,900 - agent.py - __main__ - DEBUG - Recv/send: 303356/315042
+2016-12-02 20:10:11,900 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['96708', '105742']
+2016-12-02 20:10:11,900 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698611', '1002.52734375', '110.48828125', '68.41796875', '0', '8.59375', '815.02734375', '1431', '1456', '96708', '105742', '901120', '86016', '5138.0', '930.0', '3.52941176471', '0.0', '7.05882352941', '70.5882352941', '18.8235294118', '0.0', '0.0', '85', '114']
+2016-12-02 20:10:11,900 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:11,900 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698611;1002.52734375;110.48828125;68.41796875;0;8.59375;815.02734375;1431;1456;96708;105742;901120;86016;5138.0;930.0;3.52941176471;0.0;7.05882352941;70.5882352941;18.8235294118;0.0;0.0;85;114
+2016-12-02 20:10:11,901 - agent.py - __main__ - DEBUG - Sleep for: 0.994687080383 (delta 0.0053129196167)
+2016-12-02 20:10:11,901 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:11,901 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:11,902 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       846      0      0 0           590      0      0      0 BMRU
+lo        65536 0      2581      0      0 0          2581      0      0      0 LRU
+2016-12-02 20:10:11,903 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['3471', '3221']
+2016-12-02 20:10:11,903 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:11,905 - agent.py - __main__ - DEBUG - Recv/send: 220527/220527
+2016-12-02 20:10:11,906 - agent.py - __main__ - DEBUG - Recv/send: 225774/225306
+2016-12-02 20:10:11,906 - agent.py - __main__ - DEBUG - Recv/send: 305236/316922
+2016-12-02 20:10:11,906 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['1880', '1880']
+2016-12-02 20:10:11,906 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:11,906 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698611', '1002.52734375', '110.87109375', '67.984375', '0', '8.59375', '815.078125', '14', '14', '1880', '1880', '0', '0', '52.0', '7.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:11,906 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:11,906 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698611;1002.52734375;110.87109375;67.984375;0;8.59375;815.078125;14;14;1880;1880;0;0;52.0;7.0;;;;;;;;84;113
+2016-12-02 20:10:11,906 - agent.py - __main__ - DEBUG - Sleep for: 0.994207143784 (delta 0.00579285621643)
+2016-12-02 20:10:12,901 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:12,902 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:12,903 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       873      0      0 0           640      0      0      0 BMRU
+lo        65536 0      4295      0      0 0          4295      0      0      0 LRU
+2016-12-02 20:10:12,903 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['5212', '4985']
+2016-12-02 20:10:12,903 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:12,906 - agent.py - __main__ - DEBUG - Recv/send: 336067/336067
+2016-12-02 20:10:12,906 - agent.py - __main__ - DEBUG - Recv/send: 341314/340846
+2016-12-02 20:10:12,906 - agent.py - __main__ - DEBUG - Recv/send: 422544/443200
+2016-12-02 20:10:12,906 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['117308', '126278']
+2016-12-02 20:10:12,906 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698612', '1002.52734375', '110.8125', '68.0546875', '0', '8.59375', '815.06640625', '1741', '1764', '117308', '126278', '0', '0', '5562.0', '894.0', '2.38095238095', '0.0', '7.14285714286', '90.4761904762', '0.0', '0.0', '0.0', '85', '114']
+2016-12-02 20:10:12,907 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:12,907 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698612;1002.52734375;110.8125;68.0546875;0;8.59375;815.06640625;1741;1764;117308;126278;0;0;5562.0;894.0;2.38095238095;0.0;7.14285714286;90.4761904762;0.0;0.0;0.0;85;114
+2016-12-02 20:10:12,907 - agent.py - __main__ - DEBUG - Sleep for: 0.994508981705 (delta 0.00549101829529)
+2016-12-02 20:10:12,907 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:12,907 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:12,908 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       873      0      0 0           640      0      0      0 BMRU
+lo        65536 0      4309      0      0 0          4309      0      0      0 LRU
+2016-12-02 20:10:12,908 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['5226', '4999']
+2016-12-02 20:10:12,908 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:12,911 - agent.py - __main__ - DEBUG - Recv/send: 337759/337759
+2016-12-02 20:10:12,911 - agent.py - __main__ - DEBUG - Recv/send: 343006/342538
+2016-12-02 20:10:12,911 - agent.py - __main__ - DEBUG - Recv/send: 424236/444892
+2016-12-02 20:10:12,911 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['1692', '1692']
+2016-12-02 20:10:12,912 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:12,912 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698612', '1002.52734375', '111.07421875', '67.7421875', '0', '8.59375', '815.1171875', '14', '14', '1692', '1692', '0', '0', '52.0', '7.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:12,912 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:12,912 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698612;1002.52734375;111.07421875;67.7421875;0;8.59375;815.1171875;14;14;1692;1692;0;0;52.0;7.0;;;;;;;;84;113
+2016-12-02 20:10:12,913 - agent.py - __main__ - DEBUG - Sleep for: 0.993684053421 (delta 0.00631594657898)
+2016-12-02 20:10:13,908 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:13,908 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:13,910 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       898      0      0 0           689      0      0      0 BMRU
+lo        65536 0      6323      0      0 0          6323      0      0      0 LRU
+2016-12-02 20:10:13,910 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['7265', '7062']
+2016-12-02 20:10:13,910 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:13,913 - agent.py - __main__ - DEBUG - Recv/send: 474083/474083
+2016-12-02 20:10:13,913 - agent.py - __main__ - DEBUG - Recv/send: 479330/478862
+2016-12-02 20:10:13,913 - agent.py - __main__ - DEBUG - Recv/send: 562060/592070
+2016-12-02 20:10:13,913 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['137824', '147178']
+2016-12-02 20:10:13,914 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698613', '1002.52734375', '110.86328125', '67.8125', '0', '8.59375', '815.2578125', '2039', '2063', '137824', '147178', '143360', '0', '6185.0', '901.0', '4.70588235294', '0.0', '8.23529411765', '80.0', '5.88235294118', '0.0', '1.17647058824', '85', '114']
+2016-12-02 20:10:13,914 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:13,914 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698613;1002.52734375;110.86328125;67.8125;0;8.59375;815.2578125;2039;2063;137824;147178;143360;0;6185.0;901.0;4.70588235294;0.0;8.23529411765;80.0;5.88235294118;0.0;1.17647058824;85;114
+2016-12-02 20:10:13,914 - agent.py - __main__ - DEBUG - Sleep for: 0.99361205101 (delta 0.00638794898987)
+2016-12-02 20:10:13,914 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:13,914 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:13,916 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       898      0      0 0           689      0      0      0 BMRU
+lo        65536 0      6347      0      0 0          6347      0      0      0 LRU
+2016-12-02 20:10:13,916 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['7289', '7086']
+2016-12-02 20:10:13,916 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:13,918 - agent.py - __main__ - DEBUG - Recv/send: 475287/475287
+2016-12-02 20:10:13,919 - agent.py - __main__ - DEBUG - Recv/send: 480534/480066
+2016-12-02 20:10:13,919 - agent.py - __main__ - DEBUG - Recv/send: 563264/593274
+2016-12-02 20:10:13,919 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['1204', '1204']
+2016-12-02 20:10:13,919 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:13,920 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698613', '1002.52734375', '111.25', '67.42578125', '0', '8.59375', '815.2578125', '24', '24', '1204', '1204', '0', '0', '48.0', '5.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:13,920 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:13,920 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698613;1002.52734375;111.25;67.42578125;0;8.59375;815.2578125;24;24;1204;1204;0;0;48.0;5.0;;;;;;;;84;113
+2016-12-02 20:10:13,920 - agent.py - __main__ - DEBUG - Sleep for: 0.994024991989 (delta 0.00597500801086)
+2016-12-02 20:10:14,916 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:14,916 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:14,917 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       927      0      0 0           742      0      0      0 BMRU
+lo        65536 0      8651      0      0 0          8651      0      0      0 LRU
+2016-12-02 20:10:14,918 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['9622', '9443']
+2016-12-02 20:10:14,918 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:14,921 - agent.py - __main__ - DEBUG - Recv/send: 631215/631215
+2016-12-02 20:10:14,921 - agent.py - __main__ - DEBUG - Recv/send: 636462/635994
+2016-12-02 20:10:14,921 - agent.py - __main__ - DEBUG - Recv/send: 721080/760758
+2016-12-02 20:10:14,921 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['157816', '167484']
+2016-12-02 20:10:14,921 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698614', '1002.52734375', '111.14453125', '67.44921875', '0', '8.59375', '815.33984375', '2333', '2357', '157816', '167484', '0', '0', '6732.0', '852.0', '3.61445783133', '0.0', '8.43373493976', '86.7469879518', '0.0', '0.0', '1.20481927711', '85', '114']
+2016-12-02 20:10:14,921 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:14,921 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698614;1002.52734375;111.14453125;67.44921875;0;8.59375;815.33984375;2333;2357;157816;167484;0;0;6732.0;852.0;3.61445783133;0.0;8.43373493976;86.7469879518;0.0;0.0;1.20481927711;85;114
+2016-12-02 20:10:14,922 - agent.py - __main__ - DEBUG - Sleep for: 0.993776082993 (delta 0.00622391700745)
+2016-12-02 20:10:14,922 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:14,922 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:14,924 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       927      0      0 0           742      0      0      0 BMRU
+lo        65536 0      8685      0      0 0          8685      0      0      0 LRU
+2016-12-02 20:10:14,924 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['9656', '9477']
+2016-12-02 20:10:14,924 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:14,926 - agent.py - __main__ - DEBUG - Recv/send: 633771/633771
+2016-12-02 20:10:14,926 - agent.py - __main__ - DEBUG - Recv/send: 639018/638550
+2016-12-02 20:10:14,926 - agent.py - __main__ - DEBUG - Recv/send: 723636/763314
+2016-12-02 20:10:14,926 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['2556', '2556']
+2016-12-02 20:10:14,927 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:14,927 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698614', '1002.52734375', '111.3515625', '67.2421875', '0', '8.59375', '815.33984375', '34', '34', '2556', '2556', '0', '0', '54.0', '8.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:14,927 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:14,927 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698614;1002.52734375;111.3515625;67.2421875;0;8.59375;815.33984375;34;34;2556;2556;0;0;54.0;8.0;;;;;;;;84;113
+2016-12-02 20:10:14,928 - agent.py - __main__ - DEBUG - Sleep for: 0.993432998657 (delta 0.00656700134277)
+2016-12-02 20:10:15,922 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:15,923 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:15,924 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       953      0      0 0           792      0      0      0 BMRU
+lo        65536 0     11299      0      0 0         11299      0      0      0 LRU
+2016-12-02 20:10:15,924 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['12296', '12141']
+2016-12-02 20:10:15,924 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:15,927 - agent.py - __main__ - DEBUG - Recv/send: 810655/810655
+2016-12-02 20:10:15,927 - agent.py - __main__ - DEBUG - Recv/send: 815902/815434
+2016-12-02 20:10:15,927 - agent.py - __main__ - DEBUG - Recv/send: 902228/951304
+2016-12-02 20:10:15,927 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['178592', '187990']
+2016-12-02 20:10:15,927 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698615', '1002.52734375', '111.21484375', '67.328125', '0', '8.59375', '815.390625', '2640', '2664', '178592', '187990', '0', '98304', '7338.0', '885.0', '3.44827586207', '0.0', '13.7931034483', '82.7586206897', '0.0', '0.0', '0.0', '85', '114']
+2016-12-02 20:10:15,928 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:15,928 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698615;1002.52734375;111.21484375;67.328125;0;8.59375;815.390625;2640;2664;178592;187990;0;98304;7338.0;885.0;3.44827586207;0.0;13.7931034483;82.7586206897;0.0;0.0;0.0;85;114
+2016-12-02 20:10:15,929 - agent.py - __main__ - DEBUG - Sleep for: 0.993358850479 (delta 0.00664114952087)
+2016-12-02 20:10:15,929 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:15,929 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:15,930 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       953      0      0 0           792      0      0      0 BMRU
+lo        65536 0     11323      0      0 0         11323      0      0      0 LRU
+2016-12-02 20:10:15,930 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['12320', '12165']
+2016-12-02 20:10:15,930 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:15,933 - agent.py - __main__ - DEBUG - Recv/send: 813195/813195
+2016-12-02 20:10:15,934 - agent.py - __main__ - DEBUG - Recv/send: 818442/817974
+2016-12-02 20:10:15,934 - agent.py - __main__ - DEBUG - Recv/send: 904768/953844
+2016-12-02 20:10:15,934 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['2540', '2540']
+2016-12-02 20:10:15,934 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698615', '1002.52734375', '111.421875', '67.12109375', '0', '8.59375', '815.390625', '24', '24', '2540', '2540', '0', '0', '58.0', '5.0', '100.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '84', '113']
+2016-12-02 20:10:15,934 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:15,934 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698615;1002.52734375;111.421875;67.12109375;0;8.59375;815.390625;24;24;2540;2540;0;0;58.0;5.0;100.0;0.0;0.0;0.0;0.0;0.0;0.0;84;113
+2016-12-02 20:10:15,934 - agent.py - __main__ - DEBUG - Sleep for: 0.994823932648 (delta 0.00517606735229)
+2016-12-02 20:10:16,930 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:16,931 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:16,932 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       979      0      0 0           842      0      0      0 BMRU
+lo        65536 0     14237      0      0 0         14237      0      0      0 LRU
+2016-12-02 20:10:16,932 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['15260', '15129']
+2016-12-02 20:10:16,932 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:16,936 - agent.py - __main__ - DEBUG - Recv/send: 1011067/1011067
+2016-12-02 20:10:16,936 - agent.py - __main__ - DEBUG - Recv/send: 1016314/1015846
+2016-12-02 20:10:16,936 - agent.py - __main__ - DEBUG - Recv/send: 1104200/1162896
+2016-12-02 20:10:16,936 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['199432', '209052']
+2016-12-02 20:10:16,937 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698616', '1002.52734375', '111.28515625', '67.20703125', '0', '8.6015625', '815.43359375', '2940', '2964', '199432', '209052', '0', '36864', '8768.0', '875.0', '4.70588235294', '0.0', '7.05882352941', '84.7058823529', '1.17647058824', '0.0', '2.35294117647', '85', '114']
+2016-12-02 20:10:16,937 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:16,937 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698616;1002.52734375;111.28515625;67.20703125;0;8.6015625;815.43359375;2940;2964;199432;209052;0;36864;8768.0;875.0;4.70588235294;0.0;7.05882352941;84.7058823529;1.17647058824;0.0;2.35294117647;85;114
+2016-12-02 20:10:16,937 - agent.py - __main__ - DEBUG - Sleep for: 0.993347883224 (delta 0.00665211677551)
+2016-12-02 20:10:16,937 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:16,937 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:16,938 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0       979      0      0 0           842      0      0      0 BMRU
+lo        65536 0     14271      0      0 0         14271      0      0      0 LRU
+2016-12-02 20:10:16,938 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['15294', '15163']
+2016-12-02 20:10:16,938 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:16,941 - agent.py - __main__ - DEBUG - Recv/send: 1012963/1012963
+2016-12-02 20:10:16,942 - agent.py - __main__ - DEBUG - Recv/send: 1018210/1017742
+2016-12-02 20:10:16,942 - agent.py - __main__ - DEBUG - Recv/send: 1106096/1164792
+2016-12-02 20:10:16,942 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['1896', '1896']
+2016-12-02 20:10:16,942 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:16,943 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698616', '1002.52734375', '111.59765625', '66.89453125', '0', '8.6015625', '815.43359375', '34', '34', '1896', '1896', '0', '0', '52.0', '8.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:16,943 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:16,943 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698616;1002.52734375;111.59765625;66.89453125;0;8.6015625;815.43359375;34;34;1896;1896;0;0;52.0;8.0;;;;;;;;84;113
+2016-12-02 20:10:16,944 - agent.py - __main__ - DEBUG - Sleep for: 0.993501901627 (delta 0.00649809837341)
+2016-12-02 20:10:17,938 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:17,938 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:17,940 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1007      0      0 0           894      0      0      0 BMRU
+lo        65536 0     17495      0      0 0         17495      0      0      0 LRU
+2016-12-02 20:10:17,940 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['18546', '18439']
+2016-12-02 20:10:17,940 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:17,942 - agent.py - __main__ - DEBUG - Recv/send: 1231099/1231099
+2016-12-02 20:10:17,942 - agent.py - __main__ - DEBUG - Recv/send: 1236346/1235878
+2016-12-02 20:10:17,942 - agent.py - __main__ - DEBUG - Recv/send: 1326060/1394302
+2016-12-02 20:10:17,943 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['219964', '229510']
+2016-12-02 20:10:17,943 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698617', '1002.52734375', '111.45703125', '66.96484375', '0', '8.6015625', '815.50390625', '3252', '3276', '219964', '229510', '0', '0', '8655.0', '911.0', '2.35294117647', '0.0', '11.7647058824', '84.7058823529', '0.0', '0.0', '1.17647058824', '85', '114']
+2016-12-02 20:10:17,943 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:17,943 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698617;1002.52734375;111.45703125;66.96484375;0;8.6015625;815.50390625;3252;3276;219964;229510;0;0;8655.0;911.0;2.35294117647;0.0;11.7647058824;84.7058823529;0.0;0.0;1.17647058824;85;114
+2016-12-02 20:10:17,944 - agent.py - __main__ - DEBUG - Sleep for: 0.994402170181 (delta 0.00559782981873)
+2016-12-02 20:10:17,944 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:17,944 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:17,946 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1007      0      0 0           894      0      0      0 BMRU
+lo        65536 0     17519      0      0 0         17519      0      0      0 LRU
+2016-12-02 20:10:17,946 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['18570', '18463']
+2016-12-02 20:10:17,946 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:17,948 - agent.py - __main__ - DEBUG - Recv/send: 1232979/1232979
+2016-12-02 20:10:17,948 - agent.py - __main__ - DEBUG - Recv/send: 1238226/1237758
+2016-12-02 20:10:17,948 - agent.py - __main__ - DEBUG - Recv/send: 1327940/1396182
+2016-12-02 20:10:17,948 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['1880', '1880']
+2016-12-02 20:10:17,949 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:17,950 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698617', '1002.52734375', '111.6640625', '66.7578125', '0', '8.6015625', '815.50390625', '24', '24', '1880', '1880', '0', '0', '49.0', '5.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:17,950 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:17,950 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698617;1002.52734375;111.6640625;66.7578125;0;8.6015625;815.50390625;24;24;1880;1880;0;0;49.0;5.0;;;;;;;;84;113
+2016-12-02 20:10:17,950 - agent.py - __main__ - DEBUG - Sleep for: 0.993174791336 (delta 0.00682520866394)
+2016-12-02 20:10:18,944 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:18,945 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:18,946 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1034      0      0 0           945      0      0      0 BMRU
+lo        65536 0     21043      0      0 0         21043      0      0      0 LRU
+2016-12-02 20:10:18,946 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['22121', '22038']
+2016-12-02 20:10:18,946 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:18,950 - agent.py - __main__ - DEBUG - Recv/send: 1472055/1472055
+2016-12-02 20:10:18,950 - agent.py - __main__ - DEBUG - Recv/send: 1477302/1476834
+2016-12-02 20:10:18,950 - agent.py - __main__ - DEBUG - Recv/send: 1568784/1646418
+2016-12-02 20:10:18,950 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['240844', '250236']
+2016-12-02 20:10:18,951 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698618', '1002.52734375', '111.51953125', '66.84375', '0', '8.6015625', '815.5625', '3551', '3575', '240844', '250236', '0', '0', '9111.0', '878.0', '4.7619047619', '0.0', '11.9047619048', '82.1428571429', '0.0', '0.0', '1.19047619048', '85', '114']
+2016-12-02 20:10:18,951 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:18,951 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698618;1002.52734375;111.51953125;66.84375;0;8.6015625;815.5625;3551;3575;240844;250236;0;0;9111.0;878.0;4.7619047619;0.0;11.9047619048;82.1428571429;0.0;0.0;1.19047619048;85;114
+2016-12-02 20:10:18,952 - agent.py - __main__ - DEBUG - Sleep for: 0.992639064789 (delta 0.00736093521118)
+2016-12-02 20:10:18,952 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:18,952 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:18,954 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1034      0      0 0           945      0      0      0 BMRU
+lo        65536 0     21077      0      0 0         21077      0      0      0 LRU
+2016-12-02 20:10:18,954 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['22155', '22072']
+2016-12-02 20:10:18,954 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:18,958 - agent.py - __main__ - DEBUG - Recv/send: 1473935/1473935
+2016-12-02 20:10:18,958 - agent.py - __main__ - DEBUG - Recv/send: 1479182/1478714
+2016-12-02 20:10:18,958 - agent.py - __main__ - DEBUG - Recv/send: 1570664/1648298
+2016-12-02 20:10:18,958 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['1880', '1880']
+2016-12-02 20:10:18,958 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698618', '1002.52734375', '111.85546875', '66.5078125', '0', '8.6015625', '815.5625', '34', '34', '1880', '1880', '0', '0', '74.0', '7.0', '50.0', '0.0', '50.0', '0.0', '0.0', '0.0', '0.0', '84', '113']
+2016-12-02 20:10:18,958 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:18,959 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698618;1002.52734375;111.85546875;66.5078125;0;8.6015625;815.5625;34;34;1880;1880;0;0;74.0;7.0;50.0;0.0;50.0;0.0;0.0;0.0;0.0;84;113
+2016-12-02 20:10:18,959 - agent.py - __main__ - DEBUG - Sleep for: 0.992681026459 (delta 0.00731897354126)
+2016-12-02 20:10:19,952 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:19,953 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:19,954 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1060      0      0 0           996      0      0      0 BMRU
+lo        65536 0     24901      0      0 0         24901      0      0      0 LRU
+2016-12-02 20:10:19,954 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['26005', '25947']
+2016-12-02 20:10:19,954 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:19,957 - agent.py - __main__ - DEBUG - Recv/send: 1733323/1733323
+2016-12-02 20:10:19,957 - agent.py - __main__ - DEBUG - Recv/send: 1738570/1738102
+2016-12-02 20:10:19,957 - agent.py - __main__ - DEBUG - Recv/send: 1831612/1918952
+2016-12-02 20:10:19,957 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['260948', '270654']
+2016-12-02 20:10:19,958 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698619', '1002.52734375', '111.7265625', '66.5703125', '0', '8.6015625', '815.62890625', '3850', '3875', '260948', '270654', '0', '0', '9572.0', '878.0', '3.65853658537', '0.0', '10.9756097561', '84.1463414634', '0.0', '0.0', '1.21951219512', '85', '114']
+2016-12-02 20:10:19,958 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:19,958 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698619;1002.52734375;111.7265625;66.5703125;0;8.6015625;815.62890625;3850;3875;260948;270654;0;0;9572.0;878.0;3.65853658537;0.0;10.9756097561;84.1463414634;0.0;0.0;1.21951219512;85;114
+2016-12-02 20:10:19,959 - agent.py - __main__ - DEBUG - Sleep for: 0.993932962418 (delta 0.0060670375824)
+2016-12-02 20:10:19,959 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:19,959 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:19,961 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1060      0      0 0           996      0      0      0 BMRU
+lo        65536 0     24935      0      0 0         24935      0      0      0 LRU
+2016-12-02 20:10:19,961 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['26039', '25981']
+2016-12-02 20:10:19,961 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:19,964 - agent.py - __main__ - DEBUG - Recv/send: 1735879/1735879
+2016-12-02 20:10:19,964 - agent.py - __main__ - DEBUG - Recv/send: 1741126/1740658
+2016-12-02 20:10:19,964 - agent.py - __main__ - DEBUG - Recv/send: 1834168/1921508
+2016-12-02 20:10:19,964 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['2556', '2556']
+2016-12-02 20:10:19,964 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:19,965 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698619', '1002.52734375', '112.0390625', '66.2578125', '0', '8.6015625', '815.62890625', '34', '34', '2556', '2556', '0', '0', '72.0', '8.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:19,965 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:19,965 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698619;1002.52734375;112.0390625;66.2578125;0;8.6015625;815.62890625;34;34;2556;2556;0;0;72.0;8.0;;;;;;;;84;113
+2016-12-02 20:10:19,966 - agent.py - __main__ - DEBUG - Sleep for: 0.992789030075 (delta 0.00721096992493)
+2016-12-02 20:10:20,959 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:20,960 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:20,961 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1095      0      0 0          1065      0      0      0 BMRU
+lo        65536 0     29059      0      0 0         29059      0      0      0 LRU
+2016-12-02 20:10:20,961 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['30198', '30174']
+2016-12-02 20:10:20,961 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:20,964 - agent.py - __main__ - DEBUG - Recv/send: 2013487/2013487
+2016-12-02 20:10:20,965 - agent.py - __main__ - DEBUG - Recv/send: 2018734/2018266
+2016-12-02 20:10:20,965 - agent.py - __main__ - DEBUG - Recv/send: 2113876/2212442
+2016-12-02 20:10:20,965 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['279708', '290934']
+2016-12-02 20:10:20,965 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698620', '1002.52734375', '111.90234375', '66.3203125', '0', '8.6015625', '815.703125', '4159', '4193', '279708', '290934', '0', '61440', '10187.0', '909.0', '6.17283950617', '0.0', '7.40740740741', '85.1851851852', '0.0', '0.0', '1.23456790123', '85', '114']
+2016-12-02 20:10:20,965 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:20,965 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698620;1002.52734375;111.90234375;66.3203125;0;8.6015625;815.703125;4159;4193;279708;290934;0;61440;10187.0;909.0;6.17283950617;0.0;7.40740740741;85.1851851852;0.0;0.0;1.23456790123;85;114
+2016-12-02 20:10:20,966 - agent.py - __main__ - DEBUG - Sleep for: 0.993520021439 (delta 0.0064799785614)
+2016-12-02 20:10:20,966 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:20,966 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:20,968 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1095      0      0 0          1065      0      0      0 BMRU
+lo        65536 0     29103      0      0 0         29103      0      0      0 LRU
+2016-12-02 20:10:20,968 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['30242', '30218']
+2016-12-02 20:10:20,968 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:20,972 - agent.py - __main__ - DEBUG - Recv/send: 2018071/2018071
+2016-12-02 20:10:20,972 - agent.py - __main__ - DEBUG - Recv/send: 2023318/2022850
+2016-12-02 20:10:20,972 - agent.py - __main__ - DEBUG - Recv/send: 2118460/2217026
+2016-12-02 20:10:20,972 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['4584', '4584']
+2016-12-02 20:10:20,973 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698620', '1002.52734375', '111.98046875', '66.2421875', '0', '8.6015625', '815.703125', '44', '44', '4584', '4584', '0', '0', '73.0', '10.0', '100.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '84', '113']
+2016-12-02 20:10:20,973 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:20,973 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698620;1002.52734375;111.98046875;66.2421875;0;8.6015625;815.703125;44;44;4584;4584;0;0;73.0;10.0;100.0;0.0;0.0;0.0;0.0;0.0;0.0;84;113
+2016-12-02 20:10:20,973 - agent.py - __main__ - DEBUG - Sleep for: 0.992926120758 (delta 0.00707387924194)
+2016-12-02 20:10:21,966 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:21,967 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:21,968 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1118      0      0 0          1109      0      0      0 BMRU
+lo        65536 0     33527      0      0 0         33527      0      0      0 LRU
+2016-12-02 20:10:21,968 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['34689', '34686']
+2016-12-02 20:10:21,968 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:21,971 - agent.py - __main__ - DEBUG - Recv/send: 2315991/2315991
+2016-12-02 20:10:21,971 - agent.py - __main__ - DEBUG - Recv/send: 2321238/2320770
+2016-12-02 20:10:21,971 - agent.py - __main__ - DEBUG - Recv/send: 2417760/2523338
+2016-12-02 20:10:21,971 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['299300', '306312']
+2016-12-02 20:10:21,971 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698621', '1002.52734375', '111.8203125', '66.328125', '0', '8.609375', '815.76953125', '4447', '4468', '299300', '306312', '0', '28672', '10733.0', '877.0', '8.43373493976', '0.0', '8.43373493976', '81.9277108434', '0.0', '0.0', '1.20481927711', '85', '114']
+2016-12-02 20:10:21,972 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:21,972 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698621;1002.52734375;111.8203125;66.328125;0;8.609375;815.76953125;4447;4468;299300;306312;0;28672;10733.0;877.0;8.43373493976;0.0;8.43373493976;81.9277108434;0.0;0.0;1.20481927711;85;114
+2016-12-02 20:10:21,973 - agent.py - __main__ - DEBUG - Sleep for: 0.993433952332 (delta 0.00656604766846)
+2016-12-02 20:10:21,973 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:21,973 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:21,974 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1118      0      0 0          1109      0      0      0 BMRU
+lo        65536 0     33571      0      0 0         33571      0      0      0 LRU
+2016-12-02 20:10:21,975 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['34733', '34730']
+2016-12-02 20:10:21,975 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:21,977 - agent.py - __main__ - DEBUG - Recv/send: 2319899/2319899
+2016-12-02 20:10:21,977 - agent.py - __main__ - DEBUG - Recv/send: 2325146/2324678
+2016-12-02 20:10:21,978 - agent.py - __main__ - DEBUG - Recv/send: 2421668/2527246
+2016-12-02 20:10:21,978 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['3908', '3908']
+2016-12-02 20:10:21,979 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698621', '1002.52734375', '112.125', '66.0234375', '0', '8.609375', '815.76953125', '44', '44', '3908', '3908', '0', '0', '68.0', '7.0', '0.0', '0.0', '100.0', '0.0', '0.0', '0.0', '0.0', '84', '113']
+2016-12-02 20:10:21,979 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:21,979 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698621;1002.52734375;112.125;66.0234375;0;8.609375;815.76953125;44;44;3908;3908;0;0;68.0;7.0;0.0;0.0;100.0;0.0;0.0;0.0;0.0;84;113
+2016-12-02 20:10:21,980 - agent.py - __main__ - DEBUG - Sleep for: 0.993335008621 (delta 0.00666499137878)
+2016-12-02 20:10:22,973 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:22,974 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:22,975 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1118      0      0 0          1109      0      0      0 BMRU
+lo        65536 0     38295      0      0 0         38295      0      0      0 LRU
+2016-12-02 20:10:22,975 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['39457', '39454']
+2016-12-02 20:10:22,975 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:22,978 - agent.py - __main__ - DEBUG - Recv/send: 2640213/2640213
+2016-12-02 20:10:22,979 - agent.py - __main__ - DEBUG - Recv/send: 2645460/2644992
+2016-12-02 20:10:22,979 - agent.py - __main__ - DEBUG - Recv/send: 2741982/2847560
+2016-12-02 20:10:22,979 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['320314', '320314']
+2016-12-02 20:10:22,979 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698622', '1002.52734375', '111.9765625', '66.0859375', '0', '8.609375', '815.85546875', '4724', '4724', '320314', '320314', '0', '0', '12654.0', '835.0', '9.63855421687', '0.0', '6.02409638554', '83.1325301205', '0.0', '0.0', '1.20481927711', '85', '114']
+2016-12-02 20:10:22,979 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:22,979 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698622;1002.52734375;111.9765625;66.0859375;0;8.609375;815.85546875;4724;4724;320314;320314;0;0;12654.0;835.0;9.63855421687;0.0;6.02409638554;83.1325301205;0.0;0.0;1.20481927711;85;114
+2016-12-02 20:10:22,980 - agent.py - __main__ - DEBUG - Sleep for: 0.993537902832 (delta 0.00646209716797)
+2016-12-02 20:10:22,980 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:22,980 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:22,982 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1118      0      0 0          1109      0      0      0 BMRU
+lo        65536 0     38339      0      0 0         38339      0      0      0 LRU
+2016-12-02 20:10:22,982 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['39501', '39498']
+2016-12-02 20:10:22,982 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:22,985 - agent.py - __main__ - DEBUG - Recv/send: 2643445/2643445
+2016-12-02 20:10:22,985 - agent.py - __main__ - DEBUG - Recv/send: 2648692/2648224
+2016-12-02 20:10:22,985 - agent.py - __main__ - DEBUG - Recv/send: 2745214/2850792
+2016-12-02 20:10:22,985 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['3232', '3232']
+2016-12-02 20:10:22,986 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698622', '1002.52734375', '112.484375', '65.578125', '0', '8.609375', '815.85546875', '44', '44', '3232', '3232', '0', '0', '76.0', '6.0', '100.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '84', '113']
+2016-12-02 20:10:22,986 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:22,986 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698622;1002.52734375;112.484375;65.578125;0;8.609375;815.85546875;44;44;3232;3232;0;0;76.0;6.0;100.0;0.0;0.0;0.0;0.0;0.0;0.0;84;113
+2016-12-02 20:10:22,987 - agent.py - __main__ - DEBUG - Sleep for: 0.993033885956 (delta 0.00696611404419)
+2016-12-02 20:10:23,981 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:23,981 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:23,982 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1144      0      0 0          1150      0      0      0 BMRU
+lo        65536 0     43373      0      0 0         43373      0      0      0 LRU
+2016-12-02 20:10:23,982 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['44561', '44573']
+2016-12-02 20:10:23,982 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:23,985 - agent.py - __main__ - DEBUG - Recv/send: 2982601/2982601
+2016-12-02 20:10:23,985 - agent.py - __main__ - DEBUG - Recv/send: 2987848/2987380
+2016-12-02 20:10:23,985 - agent.py - __main__ - DEBUG - Recv/send: 3086448/3210484
+2016-12-02 20:10:23,985 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['341234', '359692']
+2016-12-02 20:10:23,986 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698623', '1002.52734375', '112.3828125', '65.6015625', '0', '8.609375', '815.93359375', '5060', '5075', '341234', '359692', '0', '0', '11903.0', '886.0', '6.41025641026', '0.0', '6.41025641026', '87.1794871795', '0.0', '0.0', '0.0', '85', '114']
+2016-12-02 20:10:23,986 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:23,986 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698623;1002.52734375;112.3828125;65.6015625;0;8.609375;815.93359375;5060;5075;341234;359692;0;0;11903.0;886.0;6.41025641026;0.0;6.41025641026;87.1794871795;0.0;0.0;0.0;85;114
+2016-12-02 20:10:23,987 - agent.py - __main__ - DEBUG - Sleep for: 0.994158983231 (delta 0.00584101676941)
+2016-12-02 20:10:23,987 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:23,987 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:23,988 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1144      0      0 0          1150      0      0      0 BMRU
+lo        65536 0     43417      0      0 0         43417      0      0      0 LRU
+2016-12-02 20:10:23,988 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['44605', '44617']
+2016-12-02 20:10:23,988 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:23,992 - agent.py - __main__ - DEBUG - Recv/send: 2987169/2987169
+2016-12-02 20:10:23,992 - agent.py - __main__ - DEBUG - Recv/send: 2992416/2991948
+2016-12-02 20:10:23,992 - agent.py - __main__ - DEBUG - Recv/send: 3091016/3215052
+2016-12-02 20:10:23,992 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['4568', '4568']
+2016-12-02 20:10:23,992 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:23,993 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698623', '1002.52734375', '112.57421875', '65.41015625', '0', '8.609375', '815.93359375', '44', '44', '4568', '4568', '0', '0', '84.0', '5.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:23,994 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:23,994 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698623;1002.52734375;112.57421875;65.41015625;0;8.609375;815.93359375;44;44;4568;4568;0;0;84.0;5.0;;;;;;;;84;113
+2016-12-02 20:10:23,994 - agent.py - __main__ - DEBUG - Sleep for: 0.992569923401 (delta 0.00743007659912)
+2016-12-02 20:10:24,988 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:24,988 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:24,989 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1170      0      0 0          1201      0      0      0 BMRU
+lo        65536 0     48751      0      0 0         48751      0      0      0 LRU
+2016-12-02 20:10:24,990 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['49965', '50002']
+2016-12-02 20:10:24,990 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:24,992 - agent.py - __main__ - DEBUG - Recv/send: 3346573/3346573
+2016-12-02 20:10:24,993 - agent.py - __main__ - DEBUG - Recv/send: 3351820/3351352
+2016-12-02 20:10:24,993 - agent.py - __main__ - DEBUG - Recv/send: 3451980/3585786
+2016-12-02 20:10:24,993 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['360964', '370734']
+2016-12-02 20:10:24,994 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698624', '1002.52734375', '112.37109375', '65.48046875', '0', '8.609375', '816.06640625', '5360', '5385', '360964', '370734', '0', '0', '12060.0', '896.0', '10.3448275862', '0.0', '11.4942528736', '75.8620689655', '0.0', '0.0', '2.29885057471', '85', '114']
+2016-12-02 20:10:24,994 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:24,994 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698624;1002.52734375;112.37109375;65.48046875;0;8.609375;816.06640625;5360;5385;360964;370734;0;0;12060.0;896.0;10.3448275862;0.0;11.4942528736;75.8620689655;0.0;0.0;2.29885057471;85;114
+2016-12-02 20:10:24,994 - agent.py - __main__ - DEBUG - Sleep for: 0.99330496788 (delta 0.00669503211975)
+2016-12-02 20:10:25,989 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:25,989 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:25,990 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1196      0      0 0          1253      0      0      0 BMRU
+lo        65536 0     54395      0      0 0         54395      0      0      0 LRU
+2016-12-02 20:10:25,990 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['55635', '55698']
+2016-12-02 20:10:25,990 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:25,994 - agent.py - __main__ - DEBUG - Recv/send: 3730393/3730393
+2016-12-02 20:10:25,994 - agent.py - __main__ - DEBUG - Recv/send: 3735640/3735172
+2016-12-02 20:10:25,994 - agent.py - __main__ - DEBUG - Recv/send: 3837360/3981054
+2016-12-02 20:10:25,994 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['385380', '395268']
+2016-12-02 20:10:25,995 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698625', '1002.52734375', '112.453125', '65.3515625', '0', '8.609375', '816.11328125', '5670', '5696', '385380', '395268', '0', '0', '13204.0', '907.0', '7.40740740741', '0.0', '9.87654320988', '81.4814814815', '0.0', '0.0', '1.23456790123', '85', '114']
+2016-12-02 20:10:25,995 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:25,995 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698625;1002.52734375;112.453125;65.3515625;0;8.609375;816.11328125;5670;5696;385380;395268;0;0;13204.0;907.0;7.40740740741;0.0;9.87654320988;81.4814814815;0.0;0.0;1.23456790123;85;114
+2016-12-02 20:10:25,995 - agent.py - __main__ - DEBUG - Sleep for: 0.993534088135 (delta 0.00646591186523)
+2016-12-02 20:10:25,995 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:25,996 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:25,997 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1196      0      0 0          1253      0      0      0 BMRU
+lo        65536 0     54449      0      0 0         54449      0      0      0 LRU
+2016-12-02 20:10:25,997 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['55689', '55752']
+2016-12-02 20:10:25,997 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:26,001 - agent.py - __main__ - DEBUG - Recv/send: 3733711/3733711
+2016-12-02 20:10:26,001 - agent.py - __main__ - DEBUG - Recv/send: 3738958/3738490
+2016-12-02 20:10:26,001 - agent.py - __main__ - DEBUG - Recv/send: 3840678/3984372
+2016-12-02 20:10:26,001 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['3318', '3318']
+2016-12-02 20:10:26,002 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:26,002 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698625', '1002.52734375', '112.4921875', '65.3125', '0', '8.609375', '816.11328125', '54', '54', '3318', '3318', '0', '0', '75.0', '8.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:26,002 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:26,002 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698625;1002.52734375;112.4921875;65.3125;0;8.609375;816.11328125;54;54;3318;3318;0;0;75.0;8.0;;;;;;;;84;113
+2016-12-02 20:10:26,002 - agent.py - __main__ - DEBUG - Sleep for: 0.992940187454 (delta 0.00705981254578)
+2016-12-02 20:10:26,996 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:26,996 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:26,998 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1223      0      0 0          1305      0      0      0 BMRU
+lo        65536 0     60373      0      0 0         60373      0      0      0 LRU
+2016-12-02 20:10:26,999 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['61640', '61728']
+2016-12-02 20:10:26,999 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:27,003 - agent.py - __main__ - DEBUG - Recv/send: 4136723/4136723
+2016-12-02 20:10:27,003 - agent.py - __main__ - DEBUG - Recv/send: 4141970/4141502
+2016-12-02 20:10:27,003 - agent.py - __main__ - DEBUG - Recv/send: 4245310/4398752
+2016-12-02 20:10:27,003 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['404632', '414380']
+2016-12-02 20:10:27,003 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698626', '1002.52734375', '112.30078125', '65.359375', '0', '8.6171875', '816.25', '5951', '5976', '404632', '414380', '0', '28672', '14192.0', '919.0', '6.25', '0.0', '10.0', '82.5', '0.0', '0.0', '1.25', '85', '114']
+2016-12-02 20:10:27,003 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:27,003 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698626;1002.52734375;112.30078125;65.359375;0;8.6171875;816.25;5951;5976;404632;414380;0;28672;14192.0;919.0;6.25;0.0;10.0;82.5;0.0;0.0;1.25;85;114
+2016-12-02 20:10:27,004 - agent.py - __main__ - DEBUG - Sleep for: 0.992354154587 (delta 0.00764584541321)
+2016-12-02 20:10:27,004 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:27,004 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:27,006 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1223      0      0 0          1305      0      0      0 BMRU
+lo        65536 0     60437      0      0 0         60437      0      0      0 LRU
+2016-12-02 20:10:27,006 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['61704', '61792']
+2016-12-02 20:10:27,006 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:27,009 - agent.py - __main__ - DEBUG - Recv/send: 4139923/4139923
+2016-12-02 20:10:27,009 - agent.py - __main__ - DEBUG - Recv/send: 4145170/4144702
+2016-12-02 20:10:27,009 - agent.py - __main__ - DEBUG - Recv/send: 4248510/4401952
+2016-12-02 20:10:27,009 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['3200', '3200']
+2016-12-02 20:10:27,010 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:27,010 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698627', '1002.52734375', '112.58203125', '65.078125', '0', '8.6171875', '816.25', '64', '64', '3200', '3200', '0', '0', '83.0', '10.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:27,011 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:27,011 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698627;1002.52734375;112.58203125;65.078125;0;8.6171875;816.25;64;64;3200;3200;0;0;83.0;10.0;;;;;;;;84;113
+2016-12-02 20:10:27,012 - agent.py - __main__ - DEBUG - Sleep for: 0.992069005966 (delta 0.00793099403381)
+2016-12-02 20:10:28,004 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:28,004 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:28,005 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1250      0      0 0          1355      0      0      0 BMRU
+lo        65536 0     66671      0      0 0         66671      0      0      0 LRU
+2016-12-02 20:10:28,005 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['67965', '68076']
+2016-12-02 20:10:28,005 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:28,010 - agent.py - __main__ - DEBUG - Recv/send: 4559835/4559835
+2016-12-02 20:10:28,010 - agent.py - __main__ - DEBUG - Recv/send: 4565082/4564614
+2016-12-02 20:10:28,010 - agent.py - __main__ - DEBUG - Recv/send: 4670190/4833076
+2016-12-02 20:10:28,010 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['421680', '431124']
+2016-12-02 20:10:28,010 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698628', '1002.52734375', '112.44140625', '65.1171875', '0', '8.6171875', '816.3515625', '6261', '6284', '421680', '431124', '0', '0', '14952.0', '896.0', '7.79220779221', '0.0', '6.49350649351', '85.7142857143', '0.0', '0.0', '0.0', '85', '114']
+2016-12-02 20:10:28,010 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:28,011 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698628;1002.52734375;112.44140625;65.1171875;0;8.6171875;816.3515625;6261;6284;421680;431124;0;0;14952.0;896.0;7.79220779221;0.0;6.49350649351;85.7142857143;0.0;0.0;0.0;85;114
+2016-12-02 20:10:28,012 - agent.py - __main__ - DEBUG - Sleep for: 0.992181062698 (delta 0.00781893730164)
+2016-12-02 20:10:28,012 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:28,012 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:28,013 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1250      0      0 0          1355      0      0      0 BMRU
+lo        65536 0     66735      0      0 0         66735      0      0      0 LRU
+2016-12-02 20:10:28,014 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['68029', '68140']
+2016-12-02 20:10:28,014 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:28,021 - agent.py - __main__ - DEBUG - Recv/send: 4568127/4568127
+2016-12-02 20:10:28,021 - agent.py - __main__ - DEBUG - Recv/send: 4573374/4572906
+2016-12-02 20:10:28,021 - agent.py - __main__ - DEBUG - Recv/send: 4678482/4841368
+2016-12-02 20:10:28,021 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['8292', '8292']
+2016-12-02 20:10:28,021 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698628', '1002.52734375', '112.6015625', '64.95703125', '0', '8.6171875', '816.3515625', '64', '64', '8292', '8292', '0', '0', '164.0', '9.0', '100.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '84', '113']
+2016-12-02 20:10:28,021 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:28,021 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698628;1002.52734375;112.6015625;64.95703125;0;8.6171875;816.3515625;64;64;8292;8292;0;0;164.0;9.0;100.0;0.0;0.0;0.0;0.0;0.0;0.0;84;113
+2016-12-02 20:10:28,021 - agent.py - __main__ - DEBUG - Sleep for: 0.990211009979 (delta 0.00978899002075)
+2016-12-02 20:10:29,012 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:29,012 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:29,014 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1276      0      0 0          1405      0      0      0 BMRU
+lo        65536 0     73269      0      0 0         73269      0      0      0 LRU
+2016-12-02 20:10:29,014 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['74589', '74724']
+2016-12-02 20:10:29,014 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:29,019 - agent.py - __main__ - DEBUG - Recv/send: 5011239/5011239
+2016-12-02 20:10:29,019 - agent.py - __main__ - DEBUG - Recv/send: 5016486/5016018
+2016-12-02 20:10:29,019 - agent.py - __main__ - DEBUG - Recv/send: 5123154/5295596
+2016-12-02 20:10:29,019 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['444672', '454228']
+2016-12-02 20:10:29,020 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698629', '1002.52734375', '112.45703125', '64.99609375', '0', '8.6171875', '816.45703125', '6560', '6584', '444672', '454228', '0', '0', '16102.0', '861.0', '12.9411764706', '0.0', '10.5882352941', '74.1176470588', '0.0', '0.0', '2.35294117647', '85', '114']
+2016-12-02 20:10:29,020 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:29,020 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698629;1002.52734375;112.45703125;64.99609375;0;8.6171875;816.45703125;6560;6584;444672;454228;0;0;16102.0;861.0;12.9411764706;0.0;10.5882352941;74.1176470588;0.0;0.0;2.35294117647;85;114
+2016-12-02 20:10:29,021 - agent.py - __main__ - DEBUG - Sleep for: 0.991305112839 (delta 0.00869488716125)
+2016-12-02 20:10:29,021 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:29,021 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:29,022 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1276      0      0 0          1405      0      0      0 BMRU
+lo        65536 0     73343      0      0 0         73343      0      0      0 LRU
+2016-12-02 20:10:29,022 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['74663', '74798']
+2016-12-02 20:10:29,022 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:29,025 - agent.py - __main__ - DEBUG - Recv/send: 5014471/5014471
+2016-12-02 20:10:29,025 - agent.py - __main__ - DEBUG - Recv/send: 5019718/5019250
+2016-12-02 20:10:29,026 - agent.py - __main__ - DEBUG - Recv/send: 5126386/5298828
+2016-12-02 20:10:29,026 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['3232', '3232']
+2016-12-02 20:10:29,026 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:29,026 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698629', '1002.52734375', '112.6171875', '64.8359375', '0', '8.6171875', '816.45703125', '74', '74', '3232', '3232', '0', '0', '82.0', '9.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:29,026 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:29,027 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698629;1002.52734375;112.6171875;64.8359375;0;8.6171875;816.45703125;74;74;3232;3232;0;0;82.0;9.0;;;;;;;;84;113
+2016-12-02 20:10:29,028 - agent.py - __main__ - DEBUG - Sleep for: 0.993142843246 (delta 0.00685715675354)
+2016-12-02 20:10:30,022 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:30,022 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:30,024 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1302      0      0 0          1456      0      0      0 BMRU
+lo        65536 0     80202      0      0 0         80202      0      0      0 LRU
+2016-12-02 20:10:30,024 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['81548', '81708']
+2016-12-02 20:10:30,024 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:30,031 - agent.py - __main__ - DEBUG - Recv/send: 5482845/5482845
+2016-12-02 20:10:30,031 - agent.py - __main__ - DEBUG - Recv/send: 5488092/5487624
+2016-12-02 20:10:30,031 - agent.py - __main__ - DEBUG - Recv/send: 5596320/5778468
+2016-12-02 20:10:30,031 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['469934', '479640']
+2016-12-02 20:10:30,032 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698630', '1002.52734375', '112.46484375', '64.875', '0', '8.6171875', '816.5703125', '6885', '6910', '469934', '479640', '0', '0', '15779.0', '881.0', '14.4736842105', '0.0', '3.94736842105', '81.5789473684', '0.0', '0.0', '0.0', '85', '114']
+2016-12-02 20:10:30,032 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:30,032 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698630;1002.52734375;112.46484375;64.875;0;8.6171875;816.5703125;6885;6910;469934;479640;0;0;15779.0;881.0;14.4736842105;0.0;3.94736842105;81.5789473684;0.0;0.0;0.0;85;114
+2016-12-02 20:10:30,032 - agent.py - __main__ - DEBUG - Sleep for: 0.989716053009 (delta 0.010283946991)
+2016-12-02 20:10:30,032 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:30,033 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:30,061 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1302      0      0 0          1456      0      0      0 BMRU
+lo        65536 0     80461      0      0 0         80461      0      0      0 LRU
+2016-12-02 20:10:30,061 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['81807', '81967']
+2016-12-02 20:10:30,061 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:30,066 - agent.py - __main__ - DEBUG - Recv/send: 5501277/5501277
+2016-12-02 20:10:30,067 - agent.py - __main__ - DEBUG - Recv/send: 5506524/5506056
+2016-12-02 20:10:30,067 - agent.py - __main__ - DEBUG - Recv/send: 5614752/5796900
+2016-12-02 20:10:30,067 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['18432', '18432']
+2016-12-02 20:10:30,067 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698630', '1002.52734375', '112.4296875', '86.43359375', '0', '8.6171875', '795.046875', '259', '259', '18432', '18432', '28672', '0', '467.0', '27.0', '0.0', '0.0', '33.3333333333', '0.0', '66.6666666667', '0.0', '0.0', '84', '113']
+2016-12-02 20:10:30,067 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:30,067 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698630;1002.52734375;112.4296875;86.43359375;0;8.6171875;795.046875;259;259;18432;18432;28672;0;467.0;27.0;0.0;0.0;33.3333333333;0.0;66.6666666667;0.0;0.0;84;113
+2016-12-02 20:10:30,068 - agent.py - __main__ - DEBUG - Sleep for: 0.964598894119 (delta 0.0354011058807)
+2016-12-02 20:10:31,033 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:31,033 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:31,036 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1328      0      0 0          1506      0      0      0 BMRU
+lo        65536 0     87430      0      0 0         87430      0      0      0 LRU
+2016-12-02 20:10:31,036 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['88802', '88986']
+2016-12-02 20:10:31,036 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:31,040 - agent.py - __main__ - DEBUG - Recv/send: 5978649/5978649
+2016-12-02 20:10:31,040 - agent.py - __main__ - DEBUG - Recv/send: 5983896/5983428
+2016-12-02 20:10:31,040 - agent.py - __main__ - DEBUG - Recv/send: 6093684/6285452
+2016-12-02 20:10:31,041 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['478932', '488552']
+2016-12-02 20:10:31,042 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698631', '1002.52734375', '112.49609375', '86.66015625', '0', '8.6171875', '794.75390625', '6995', '7019', '478932', '488552', '0', '0', '16414.0', '864.0', '17.2839506173', '0.0', '8.64197530864', '72.8395061728', '0.0', '0.0', '1.23456790123', '84', '113']
+2016-12-02 20:10:31,042 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:31,042 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698631;1002.52734375;112.49609375;86.66015625;0;8.6171875;794.75390625;6995;7019;478932;488552;0;0;16414.0;864.0;17.2839506173;0.0;8.64197530864;72.8395061728;0.0;0.0;1.23456790123;84;113
+2016-12-02 20:10:31,042 - agent.py - __main__ - DEBUG - Sleep for: 0.990624189377 (delta 0.00937581062317)
+2016-12-02 20:10:32,034 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:32,034 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:32,035 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1357      0      0 0          1561      0      0      0 BMRU
+lo        65536 0     94879      0      0 0         94879      0      0      0 LRU
+2016-12-02 20:10:32,035 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['96280', '96490']
+2016-12-02 20:10:32,035 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:32,040 - agent.py - __main__ - DEBUG - Recv/send: 6488559/6488559
+2016-12-02 20:10:32,040 - agent.py - __main__ - DEBUG - Recv/send: 6493806/6493338
+2016-12-02 20:10:32,040 - agent.py - __main__ - DEBUG - Recv/send: 6605482/6807106
+2016-12-02 20:10:32,040 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['511798', '521654']
+2016-12-02 20:10:32,041 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698632', '1002.52734375', '112.7734375', '86.27734375', '0', '8.625', '794.8515625', '7478', '7504', '511798', '521654', '0', '28672', '17300.0', '895.0', '14.4578313253', '0.0', '10.843373494', '74.6987951807', '0.0', '0.0', '0.0', '84', '113']
+2016-12-02 20:10:32,041 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:32,041 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698632;1002.52734375;112.7734375;86.27734375;0;8.625;794.8515625;7478;7504;511798;521654;0;28672;17300.0;895.0;14.4578313253;0.0;10.843373494;74.6987951807;0.0;0.0;0.0;84;113
+2016-12-02 20:10:32,042 - agent.py - __main__ - DEBUG - Sleep for: 0.992040872574 (delta 0.00795912742615)
+2016-12-02 20:10:33,034 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:33,035 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:33,036 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1383      0      0 0          1612      0      0      0 BMRU
+lo        65536 0    102633      0      0 0        102633      0      0      0 LRU
+2016-12-02 20:10:33,036 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['104060', '104295']
+2016-12-02 20:10:33,036 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:33,040 - agent.py - __main__ - DEBUG - Recv/send: 7020465/7020465
+2016-12-02 20:10:33,040 - agent.py - __main__ - DEBUG - Recv/send: 7025712/7025244
+2016-12-02 20:10:33,040 - agent.py - __main__ - DEBUG - Recv/send: 7138948/7350326
+2016-12-02 20:10:33,040 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['533466', '543220']
+2016-12-02 20:10:33,041 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698633', '1002.52734375', '112.90625', '85.99609375', '0', '8.625', '795.0', '7780', '7805', '533466', '543220', '0', '0', '18030.0', '901.0', '13.2530120482', '0.0', '9.63855421687', '74.6987951807', '0.0', '0.0', '2.40963855422', '85', '114']
+2016-12-02 20:10:33,041 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:33,041 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698633;1002.52734375;112.90625;85.99609375;0;8.625;795.0;7780;7805;533466;543220;0;0;18030.0;901.0;13.2530120482;0.0;9.63855421687;74.6987951807;0.0;0.0;2.40963855422;85;114
+2016-12-02 20:10:33,041 - agent.py - __main__ - DEBUG - Sleep for: 0.992999076843 (delta 0.00700092315674)
+2016-12-02 20:10:33,042 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:33,043 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:33,044 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1383      0      0 0          1612      0      0      0 BMRU
+lo        65536 0    102707      0      0 0        102707      0      0      0 LRU
+2016-12-02 20:10:33,044 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['104134', '104369']
+2016-12-02 20:10:33,044 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:33,048 - agent.py - __main__ - DEBUG - Recv/send: 7025795/7025795
+2016-12-02 20:10:33,048 - agent.py - __main__ - DEBUG - Recv/send: 7031042/7030574
+2016-12-02 20:10:33,048 - agent.py - __main__ - DEBUG - Recv/send: 7144278/7355656
+2016-12-02 20:10:33,048 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['5330', '5330']
+2016-12-02 20:10:33,049 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:33,049 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698633', '1002.52734375', '113.03125', '85.87890625', '0', '8.625', '794.9921875', '74', '74', '5330', '5330', '0', '0', '81.0', '6.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:33,049 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:33,049 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698633;1002.52734375;113.03125;85.87890625;0;8.625;794.9921875;74;74;5330;5330;0;0;81.0;6.0;;;;;;;;84;113
+2016-12-02 20:10:33,049 - agent.py - __main__ - DEBUG - Sleep for: 0.992954969406 (delta 0.00704503059387)
+2016-12-02 20:10:34,043 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:34,043 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:34,045 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1407      0      0 0          1659      0      0      0 BMRU
+lo        65536 0    110771      0      0 0        110771      0      0      0 LRU
+2016-12-02 20:10:34,045 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['112222', '112480']
+2016-12-02 20:10:34,045 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:34,050 - agent.py - __main__ - DEBUG - Recv/send: 7579097/7579097
+2016-12-02 20:10:34,050 - agent.py - __main__ - DEBUG - Recv/send: 7584344/7583876
+2016-12-02 20:10:34,050 - agent.py - __main__ - DEBUG - Recv/send: 7699020/7919688
+2016-12-02 20:10:34,050 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['554742', '564032']
+2016-12-02 20:10:34,051 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698634', '1002.52734375', '113.0', '85.78125', '0', '8.625', '795.12109375', '8088', '8111', '554742', '564032', '0', '0', '17912.0', '938.0', '15.8536585366', '0.0', '7.31707317073', '75.6097560976', '0.0', '0.0', '1.21951219512', '85', '114']
+2016-12-02 20:10:34,051 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:34,051 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698634;1002.52734375;113.0;85.78125;0;8.625;795.12109375;8088;8111;554742;564032;0;0;17912.0;938.0;15.8536585366;0.0;7.31707317073;75.6097560976;0.0;0.0;1.21951219512;85;114
+2016-12-02 20:10:34,051 - agent.py - __main__ - DEBUG - Sleep for: 0.99192404747 (delta 0.00807595252991)
+2016-12-02 20:10:34,051 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:34,051 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:34,054 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1407      0      0 0          1659      0      0      0 BMRU
+lo        65536 0    110855      0      0 0        110855      0      0      0 LRU
+2016-12-02 20:10:34,054 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['112306', '112564']
+2016-12-02 20:10:34,054 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:34,058 - agent.py - __main__ - DEBUG - Recv/send: 7585103/7585103
+2016-12-02 20:10:34,058 - agent.py - __main__ - DEBUG - Recv/send: 7590350/7589882
+2016-12-02 20:10:34,058 - agent.py - __main__ - DEBUG - Recv/send: 7705026/7925694
+2016-12-02 20:10:34,059 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['6006', '6006']
+2016-12-02 20:10:34,059 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698634', '1002.52734375', '113.1640625', '85.6171875', '0', '8.625', '795.12109375', '84', '84', '6006', '6006', '0', '0', '145.0', '10.0', '100.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '84', '113']
+2016-12-02 20:10:34,059 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:34,059 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698634;1002.52734375;113.1640625;85.6171875;0;8.625;795.12109375;84;84;6006;6006;0;0;145.0;10.0;100.0;0.0;0.0;0.0;0.0;0.0;0.0;84;113
+2016-12-02 20:10:34,060 - agent.py - __main__ - DEBUG - Sleep for: 0.991483926773 (delta 0.00851607322693)
+2016-12-02 20:10:35,052 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:35,052 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:35,054 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1429      0      0 0          1702      0      0      0 BMRU
+lo        65536 0    119195      0      0 0        119195      0      0      0 LRU
+2016-12-02 20:10:35,054 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['120668', '120947']
+2016-12-02 20:10:35,054 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:35,059 - agent.py - __main__ - DEBUG - Recv/send: 8158987/8158987
+2016-12-02 20:10:35,059 - agent.py - __main__ - DEBUG - Recv/send: 8164234/8163766
+2016-12-02 20:10:35,059 - agent.py - __main__ - DEBUG - Recv/send: 8280230/8509900
+2016-12-02 20:10:35,059 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['575204', '584206']
+2016-12-02 20:10:35,060 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698635', '1002.52734375', '113.12890625', '85.5078125', '0', '8.62890625', '795.26171875', '8362', '8383', '575204', '584206', '4096', '0', '18978.0', '957.0', '15.8536585366', '0.0', '9.75609756098', '70.7317073171', '3.65853658537', '0.0', '0.0', '85', '114']
+2016-12-02 20:10:35,060 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:35,060 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698635;1002.52734375;113.12890625;85.5078125;0;8.62890625;795.26171875;8362;8383;575204;584206;4096;0;18978.0;957.0;15.8536585366;0.0;9.75609756098;70.7317073171;3.65853658537;0.0;0.0;85;114
+2016-12-02 20:10:35,060 - agent.py - __main__ - DEBUG - Sleep for: 0.992075920105 (delta 0.00792407989502)
+2016-12-02 20:10:35,060 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:35,061 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:35,062 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1429      0      0 0          1702      0      0      0 BMRU
+lo        65536 0    119283      0      0 0        119283      0      0      0 LRU
+2016-12-02 20:10:35,062 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['120756', '121035']
+2016-12-02 20:10:35,062 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:35,067 - agent.py - __main__ - DEBUG - Recv/send: 8164419/8164419
+2016-12-02 20:10:35,067 - agent.py - __main__ - DEBUG - Recv/send: 8169666/8169198
+2016-12-02 20:10:35,067 - agent.py - __main__ - DEBUG - Recv/send: 8285662/8515332
+2016-12-02 20:10:35,067 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['5432', '5432']
+2016-12-02 20:10:35,068 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698635', '1002.52734375', '113.23046875', '85.40625', '0', '8.62890625', '795.26171875', '88', '88', '5432', '5432', '0', '0', '98.0', '11.0', '0.0', '0.0', '100.0', '0.0', '0.0', '0.0', '0.0', '84', '113']
+2016-12-02 20:10:35,068 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:35,068 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698635;1002.52734375;113.23046875;85.40625;0;8.62890625;795.26171875;88;88;5432;5432;0;0;98.0;11.0;0.0;0.0;100.0;0.0;0.0;0.0;0.0;84;113
+2016-12-02 20:10:35,069 - agent.py - __main__ - DEBUG - Sleep for: 0.99148106575 (delta 0.00851893424988)
+2016-12-02 20:10:36,062 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:36,062 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:36,064 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1455      0      0 0          1752      0      0      0 BMRU
+lo        65536 0    127927      0      0 0        127927      0      0      0 LRU
+2016-12-02 20:10:36,064 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['129426', '129729']
+2016-12-02 20:10:36,064 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:36,069 - agent.py - __main__ - DEBUG - Recv/send: 8762675/8762675
+2016-12-02 20:10:36,069 - agent.py - __main__ - DEBUG - Recv/send: 8767922/8767454
+2016-12-02 20:10:36,069 - agent.py - __main__ - DEBUG - Recv/send: 8885478/9124784
+2016-12-02 20:10:36,069 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['599816', '609452']
+2016-12-02 20:10:36,070 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698636', '1002.52734375', '113.19921875', '85.30078125', '0', '8.62890625', '795.3984375', '8670', '8694', '599816', '609452', '0', '2285568', '18262.0', '885.0', '17.0731707317', '0.0', '6.09756097561', '71.9512195122', '0.0', '0.0', '4.87804878049', '85', '114']
+2016-12-02 20:10:36,070 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:36,070 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698636;1002.52734375;113.19921875;85.30078125;0;8.62890625;795.3984375;8670;8694;599816;609452;0;2285568;18262.0;885.0;17.0731707317;0.0;6.09756097561;71.9512195122;0.0;0.0;4.87804878049;85;114
+2016-12-02 20:10:36,070 - agent.py - __main__ - DEBUG - Sleep for: 0.991647005081 (delta 0.00835299491882)
+2016-12-02 20:10:36,070 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:36,071 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:36,072 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1455      0      0 0          1752      0      0      0 BMRU
+lo        65536 0    128041      0      0 0        128041      0      0      0 LRU
+2016-12-02 20:10:36,072 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['129540', '129843']
+2016-12-02 20:10:36,072 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:36,077 - agent.py - __main__ - DEBUG - Recv/send: 8767361/8767361
+2016-12-02 20:10:36,077 - agent.py - __main__ - DEBUG - Recv/send: 8772608/8772140
+2016-12-02 20:10:36,077 - agent.py - __main__ - DEBUG - Recv/send: 8890164/9129470
+2016-12-02 20:10:36,077 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['4686', '4686']
+2016-12-02 20:10:36,077 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:36,078 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698636', '1002.52734375', '113.29296875', '85.2109375', '0', '8.62890625', '795.39453125', '114', '114', '4686', '4686', '0', '0', '93.0', '7.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:36,078 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:36,078 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698636;1002.52734375;113.29296875;85.2109375;0;8.62890625;795.39453125;114;114;4686;4686;0;0;93.0;7.0;;;;;;;;84;113
+2016-12-02 20:10:36,079 - agent.py - __main__ - DEBUG - Sleep for: 0.991795063019 (delta 0.0082049369812)
+2016-12-02 20:10:37,071 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:37,072 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:37,073 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1480      0      0 0          1798      0      0      0 BMRU
+lo        65536 0    136985      0      0 0        136985      0      0      0 LRU
+2016-12-02 20:10:37,073 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['138509', '138833']
+2016-12-02 20:10:37,073 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:37,077 - agent.py - __main__ - DEBUG - Recv/send: 9383227/9383227
+2016-12-02 20:10:37,077 - agent.py - __main__ - DEBUG - Recv/send: 9388474/9388006
+2016-12-02 20:10:37,077 - agent.py - __main__ - DEBUG - Recv/send: 9507678/9755922
+2016-12-02 20:10:37,077 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['617514', '626452']
+2016-12-02 20:10:37,078 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698637', '1002.52734375', '113.21484375', '85.13671875', '0', '8.63671875', '795.5390625', '8969', '8990', '617514', '626452', '0', '53248', '19147.0', '897.0', '15.8536585366', '0.0', '9.75609756098', '67.0731707317', '4.87804878049', '0.0', '2.43902439024', '85', '114']
+2016-12-02 20:10:37,078 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:37,078 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698637;1002.52734375;113.21484375;85.13671875;0;8.63671875;795.5390625;8969;8990;617514;626452;0;53248;19147.0;897.0;15.8536585366;0.0;9.75609756098;67.0731707317;4.87804878049;0.0;2.43902439024;85;114
+2016-12-02 20:10:37,078 - agent.py - __main__ - DEBUG - Sleep for: 0.992760896683 (delta 0.00723910331726)
+2016-12-02 20:10:37,079 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:37,079 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:37,080 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1480      0      0 0          1798      0      0      0 BMRU
+lo        65536 0    137069      0      0 0        137069      0      0      0 LRU
+2016-12-02 20:10:37,082 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['138593', '138917']
+2016-12-02 20:10:37,082 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:37,085 - agent.py - __main__ - DEBUG - Recv/send: 9389265/9389265
+2016-12-02 20:10:37,085 - agent.py - __main__ - DEBUG - Recv/send: 9394512/9394044
+2016-12-02 20:10:37,085 - agent.py - __main__ - DEBUG - Recv/send: 9513716/9761960
+2016-12-02 20:10:37,085 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['6038', '6038']
+2016-12-02 20:10:37,085 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:37,086 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698637', '1002.52734375', '113.25', '85.1015625', '0', '8.63671875', '795.5390625', '84', '84', '6038', '6038', '0', '0', '109.0', '8.0', '', '', '', '', '', '', '', '84', '113']
+2016-12-02 20:10:37,086 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:37,086 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698637;1002.52734375;113.25;85.1015625;0;8.63671875;795.5390625;84;84;6038;6038;0;0;109.0;8.0;;;;;;;;84;113
+2016-12-02 20:10:37,086 - agent.py - __main__ - DEBUG - Sleep for: 0.99204492569 (delta 0.0079550743103)
+2016-12-02 20:10:38,079 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:38,079 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:38,081 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1506      0      0 0          1848      0      0      0 BMRU
+lo        65536 0    146338      0      0 0        146338      0      0      0 LRU
+2016-12-02 20:10:38,081 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['147888', '148236']
+2016-12-02 20:10:38,081 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:38,085 - agent.py - __main__ - DEBUG - Recv/send: 10025923/10025923
+2016-12-02 20:10:38,086 - agent.py - __main__ - DEBUG - Recv/send: 10031170/10030702
+2016-12-02 20:10:38,086 - agent.py - __main__ - DEBUG - Recv/send: 10151934/10409734
+2016-12-02 20:10:38,086 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['638218', '647774']
+2016-12-02 20:10:38,087 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698638', '1002.52734375', '113.22265625', '84.98828125', '0', '8.63671875', '795.6796875', '9295', '9319', '638218', '647774', '0', '0', '19455.0', '907.0', '16.8674698795', '0.0', '12.0481927711', '71.0843373494', '0.0', '0.0', '0.0', '85', '114']
+2016-12-02 20:10:38,087 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:38,087 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698638;1002.52734375;113.22265625;84.98828125;0;8.63671875;795.6796875;9295;9319;638218;647774;0;0;19455.0;907.0;16.8674698795;0.0;12.0481927711;71.0843373494;0.0;0.0;0.0;85;114
+2016-12-02 20:10:38,087 - agent.py - __main__ - DEBUG - Sleep for: 0.991925954819 (delta 0.00807404518127)
+2016-12-02 20:10:38,087 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:38,087 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:38,089 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1506      0      0 0          1848      0      0      0 BMRU
+lo        65536 0    146427      0      0 0        146427      0      0      0 LRU
+2016-12-02 20:10:38,089 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['147977', '148325']
+2016-12-02 20:10:38,090 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:38,094 - agent.py - __main__ - DEBUG - Recv/send: 10031945/10031945
+2016-12-02 20:10:38,094 - agent.py - __main__ - DEBUG - Recv/send: 10037192/10036724
+2016-12-02 20:10:38,094 - agent.py - __main__ - DEBUG - Recv/send: 10157956/10415756
+2016-12-02 20:10:38,094 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['6022', '6022']
+2016-12-02 20:10:38,094 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698638', '1002.52734375', '113.34765625', '84.86328125', '0', '8.63671875', '795.6796875', '89', '89', '6022', '6022', '0', '0', '115.0', '8.0', '0.0', '0.0', '100.0', '0.0', '0.0', '0.0', '0.0', '84', '113']
+2016-12-02 20:10:38,095 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:38,095 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698638;1002.52734375;113.34765625;84.86328125;0;8.63671875;795.6796875;89;89;6022;6022;0;0;115.0;8.0;0.0;0.0;100.0;0.0;0.0;0.0;0.0;84;113
+2016-12-02 20:10:38,095 - agent.py - __main__ - DEBUG - Sleep for: 0.992228031158 (delta 0.00777196884155)
+2016-12-02 20:10:39,088 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:39,088 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:39,090 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1529      0      0 0          1892      0      0      0 BMRU
+lo        65536 0    155996      0      0 0        155996      0      0      0 LRU
+2016-12-02 20:10:39,090 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['157569', '157938']
+2016-12-02 20:10:39,090 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:39,094 - agent.py - __main__ - DEBUG - Recv/send: 10689861/10689861
+2016-12-02 20:10:39,094 - agent.py - __main__ - DEBUG - Recv/send: 10695108/10694640
+2016-12-02 20:10:39,094 - agent.py - __main__ - DEBUG - Recv/send: 10817252/11084112
+2016-12-02 20:10:39,094 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['659296', '668356']
+2016-12-02 20:10:39,095 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698639', '1002.52734375', '113.30859375', '84.74609375', '0', '8.63671875', '795.8359375', '9592', '9613', '659296', '668356', '0', '0', '20031.0', '902.0', '18.6046511628', '0.0', '10.4651162791', '68.6046511628', '0.0', '0.0', '2.32558139535', '85', '114']
+2016-12-02 20:10:39,095 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:39,095 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698639;1002.52734375;113.30859375;84.74609375;0;8.63671875;795.8359375;9592;9613;659296;668356;0;0;20031.0;902.0;18.6046511628;0.0;10.4651162791;68.6046511628;0.0;0.0;2.32558139535;85;114
+2016-12-02 20:10:39,095 - agent.py - __main__ - DEBUG - Sleep for: 0.992490053177 (delta 0.00750994682312)
+2016-12-02 20:10:39,096 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:39,096 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:39,098 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1529      0      0 0          1892      0      0      0 BMRU
+lo        65536 0    156085      0      0 0        156085      0      0      0 LRU
+2016-12-02 20:10:39,098 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['157658', '158027']
+2016-12-02 20:10:39,098 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:39,103 - agent.py - __main__ - DEBUG - Recv/send: 10695293/10695293
+2016-12-02 20:10:39,103 - agent.py - __main__ - DEBUG - Recv/send: 10700540/10700072
+2016-12-02 20:10:39,103 - agent.py - __main__ - DEBUG - Recv/send: 10822684/11089544
+2016-12-02 20:10:39,103 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['5432', '5432']
+2016-12-02 20:10:39,103 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698639', '1002.52734375', '113.34765625', '84.70703125', '0', '8.63671875', '795.8359375', '89', '89', '5432', '5432', '0', '0', '91.0', '8.0', '0.0', '0.0', '100.0', '0.0', '0.0', '0.0', '0.0', '84', '113']
+2016-12-02 20:10:39,103 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:39,103 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698639;1002.52734375;113.34765625;84.70703125;0;8.63671875;795.8359375;89;89;5432;5432;0;0;91.0;8.0;0.0;0.0;100.0;0.0;0.0;0.0;0.0;84;113
+2016-12-02 20:10:39,104 - agent.py - __main__ - DEBUG - Sleep for: 0.991446018219 (delta 0.00855398178101)
+2016-12-02 20:10:40,097 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:40,097 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:40,098 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1553      0      0 0          1939      0      0      0 BMRU
+lo        65536 0    165409      0      0 0        165409      0      0      0 LRU
+2016-12-02 20:10:40,098 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['167006', '167398']
+2016-12-02 20:10:40,099 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:40,101 - agent.py - __main__ - DEBUG - Recv/send: 11334699/11334699
+2016-12-02 20:10:40,101 - agent.py - __main__ - DEBUG - Recv/send: 11339946/11339478
+2016-12-02 20:10:40,101 - agent.py - __main__ - DEBUG - Recv/send: 11463530/11739648
+2016-12-02 20:10:40,102 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['640846', '650104']
+2016-12-02 20:10:40,102 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698640', '1002.52734375', '104.328125', '93.578125', '0', '8.63671875', '795.984375', '9348', '9371', '640846', '650104', '0', '0', '19733.0', '890.0', '15.1898734177', '0.0', '11.3924050633', '73.417721519', '0.0', '0.0', '0.0', '84', '112']
+2016-12-02 20:10:40,102 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:40,102 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698640;1002.52734375;104.328125;93.578125;0;8.63671875;795.984375;9348;9371;640846;650104;0;0;19733.0;890.0;15.1898734177;0.0;11.3924050633;73.417721519;0.0;0.0;0.0;84;112
+2016-12-02 20:10:40,103 - agent.py - __main__ - DEBUG - Sleep for: 0.993991136551 (delta 0.0060088634491)
+2016-12-02 20:10:41,098 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:41,098 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:41,100 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1555      0      0 0          1943      0      0      0 BMRU
+lo        65536 0    165413      0      0 0        165413      0      0      0 LRU
+2016-12-02 20:10:41,100 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['167012', '167406']
+2016-12-02 20:10:41,100 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:41,103 - agent.py - __main__ - DEBUG - Recv/send: 11335211/11335211
+2016-12-02 20:10:41,103 - agent.py - __main__ - DEBUG - Recv/send: 11340458/11339990
+2016-12-02 20:10:41,103 - agent.py - __main__ - DEBUG - Recv/send: 11464162/11740712
+2016-12-02 20:10:41,103 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['632', '1064']
+2016-12-02 20:10:41,103 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698641', '1002.52734375', '104.25390625', '93.64453125', '0', '8.63671875', '795.9921875', '6', '8', '632', '1064', '0', '0', '495.0', '163.0', '3.0', '0.0', '1.0', '96.0', '0.0', '0.0', '0.0', '84', '112']
+2016-12-02 20:10:41,104 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:41,104 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698641;1002.52734375;104.25390625;93.64453125;0;8.63671875;795.9921875;6;8;632;1064;0;0;495.0;163.0;3.0;0.0;1.0;96.0;0.0;0.0;0.0;84;112
+2016-12-02 20:10:41,104 - agent.py - __main__ - DEBUG - Sleep for: 0.993820905685 (delta 0.00617909431458)
+2016-12-02 20:10:41,104 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:41,105 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:41,106 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1555      0      0 0          1943      0      0      0 BMRU
+lo        65536 0    165417      0      0 0        165417      0      0      0 LRU
+2016-12-02 20:10:41,106 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['167016', '167410']
+2016-12-02 20:10:41,106 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:41,109 - agent.py - __main__ - DEBUG - Recv/send: 11335691/11335691
+2016-12-02 20:10:41,109 - agent.py - __main__ - DEBUG - Recv/send: 11340938/11340470
+2016-12-02 20:10:41,109 - agent.py - __main__ - DEBUG - Recv/send: 11464642/11741192
+2016-12-02 20:10:41,109 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['480', '480']
+2016-12-02 20:10:41,109 - agent.py - __main__ - ERROR - Error trying to count delta of cpu usage metrics. Traceback: Traceback (most recent call last):
+  File "/tmp/tmpFlxZbi/agent.py", line 147, in check
+    result.append(str((delta[cnt] / sum_val) * 100))
+ZeroDivisionError: float division by zero
+
+2016-12-02 20:10:41,110 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698641', '1002.52734375', '104.3203125', '93.578125', '0', '8.63671875', '795.9921875', '4', '4', '480', '480', '0', '0', '35.0', '3.0', '', '', '', '', '', '', '', '83', '111']
+2016-12-02 20:10:41,110 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:41,110 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698641;1002.52734375;104.3203125;93.578125;0;8.63671875;795.9921875;4;4;480;480;0;0;35.0;3.0;;;;;;;;83;111
+2016-12-02 20:10:41,110 - agent.py - __main__ - DEBUG - Sleep for: 0.994150876999 (delta 0.0058491230011)
+2016-12-02 20:10:42,105 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:42,106 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:42,107 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1555      0      0 0          1943      0      0      0 BMRU
+lo        65536 0    165421      0      0 0        165421      0      0      0 LRU
+2016-12-02 20:10:42,107 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['167020', '167414']
+2016-12-02 20:10:42,107 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:42,110 - agent.py - __main__ - DEBUG - Recv/send: 11336139/11336139
+2016-12-02 20:10:42,110 - agent.py - __main__ - DEBUG - Recv/send: 11341386/11340918
+2016-12-02 20:10:42,110 - agent.py - __main__ - DEBUG - Recv/send: 11465090/11741640
+2016-12-02 20:10:42,110 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['448', '448']
+2016-12-02 20:10:42,110 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698642', '1002.52734375', '104.26171875', '93.625', '0', '8.64453125', '795.99609375', '4', '4', '448', '448', '0', '28672', '489.0', '169.0', '3.0303030303', '0.0', '1.0101010101', '95.9595959596', '0.0', '0.0', '0.0', '83', '110']
+2016-12-02 20:10:42,110 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:42,110 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698642;1002.52734375;104.26171875;93.625;0;8.64453125;795.99609375;4;4;448;448;0;28672;489.0;169.0;3.0303030303;0.0;1.0101010101;95.9595959596;0.0;0.0;0.0;83;110
+2016-12-02 20:10:42,111 - agent.py - __main__ - DEBUG - Sleep for: 0.994402885437 (delta 0.00559711456299)
+2016-12-02 20:10:43,106 - agent.py - __main__ - DEBUG - Start check
+2016-12-02 20:10:43,107 - agent.py - __main__ - INFO - Start. Columns: ['Memory_total', 'Memory_used', 'Memory_free', 'Memory_shared', 'Memory_buff', 'Memory_cached']
+2016-12-02 20:10:43,108 - agent.py - __main__ - DEBUG - /sbin/ifconfig output is: Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500 0        44      0      0 0            50      0      0      0 BMRU
+eth1       1500 0      1555      0      0 0          1943      0      0      0 BMRU
+lo        65536 0    165425      0      0 0        165425      0      0      0 LRU
+2016-12-02 20:10:43,108 - agent.py - __main__ - DEBUG - Total RX/TX packets counters: ['167024', '167418']
+2016-12-02 20:10:43,108 - agent.py - __main__ - DEBUG - Starting: cat /proc/net/dev | tail -n +3 | cut -d':' -f 1,2 --output-delimiter=' ' | awk '{print $1, $2, $10}'
+2016-12-02 20:10:43,111 - agent.py - __main__ - DEBUG - Recv/send: 11336651/11336651
+2016-12-02 20:10:43,111 - agent.py - __main__ - DEBUG - Recv/send: 11341898/11341430
+2016-12-02 20:10:43,111 - agent.py - __main__ - DEBUG - Recv/send: 11465602/11742152
+2016-12-02 20:10:43,111 - agent.py - __main__ - DEBUG - Network recieved/sent bytes: ['512', '512']
+2016-12-02 20:10:43,112 - agent.py - __main__ - DEBUG - line: ['127.0.0.1', '1480698643', '1002.52734375', '104.2578125', '93.625', '0', '8.64453125', '796.0', '4', '4', '512', '512', '0', '0', '445.0', '150.0', '0.0', '0.0', '0.0', '100.0', '0.0', '0.0', '0.0', '83', '110']
+2016-12-02 20:10:43,112 - agent.py - __main__ - DEBUG - Collected:
+[]
+2016-12-02 20:10:43,112 - agent.py - __main__ - DEBUG - str: 127.0.0.1;1480698643;1002.52734375;104.2578125;93.625;0;8.64453125;796.0;4;4;512;512;0;0;445.0;150.0;0.0;0.0;0.0;100.0;0.0;0.0;0.0;83;110
+2016-12-02 20:10:43,112 - agent.py - __main__ - DEBUG - Sleep for: 0.994022846222 (delta 0.00597715377808)
+2016-12-02 20:10:43,251 - agent.py - __main__ - WARNING - Got signal 17
+2016-12-02 20:10:43,251 - agent.py - __main__ - INFO - Interrupted
+2016-12-02 20:10:43,251 - agent.py - __main__ - DEBUG - Join the worker thread, waiting for cleanup
+2016-12-02 20:10:43,289 - agent.py - __main__ - WARNING - Got signal 1
+2016-12-02 20:10:43,289 - agent.py - __main__ - INFO - Waiting for worker process was interrupted
+2016-12-02 20:10:43,289 - agent.py - __main__ - DEBUG - Join the worker thread, waiting for cleanup
