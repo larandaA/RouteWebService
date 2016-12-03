@@ -1,7 +1,0 @@
-2016-12-03 21:35:23.284 +0300 [info] [] Start
-2016-12-03 21:43:22.661 +0300 [error] [benchmark_io 037] format error
-2016-12-03 21:43:23.289 +0300 [error] [monitor_io] bq_sleep: Operation canceled
-2016-12-03 21:43:23.289 +0300 [error] [monitor_io] bq_sleep: Operation canceled
-2016-12-03 21:43:23.289 +0300 [error] [phantom_logger] bq_sleep: Operation canceled
-2016-12-03 21:43:23.289 +0300 [error] [benchmark_io stream_method brief_logger] bq_sleep: Operation canceled
-2016-12-03 21:43:23.289 +0300 [info] [] Exit
