@@ -1,5 +1,5 @@
-all: HelloWorld.cpp
-	g++ HelloWorld.cpp -fPIC -lfastcgi-daemon2 -shared -o -libhelloworld.so
+all: RouteWebService.cpp
+	g++ -std=c++0x RouteWebService.cpp -fPIC -lfastcgi-daemon2 -shared -o libroutews.so
 
 clean:
-	rm *.so
+	rm -f *.so
