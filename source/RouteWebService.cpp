@@ -4,6 +4,13 @@
 #include <fastcgi2/request.h>
 #include <fastcgi2/data_buffer.h>
 
+#include "rapidjson/document.h"
+
+#include <bsoncxx/builder/stream/document.hpp>
+#include <bsoncxx/json.hpp>
+
+#include <mongocxx/client.hpp>
+
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -13,6 +20,8 @@ const std::string POST_METHOD = "POST";
 const std::string PUT_METHOD = "PUT";
 const std::string GET_METHOD = "GET";
 const std::string DELETE_METHOD = "DELETE";
+
+const std::string NOT_FOUND = "NF";
 
 class RouteHandler {
 public:
@@ -52,7 +61,23 @@ public:
 class PointsHandler {
 private:
 	std::string handlePost(const fastcgi::DataBuffer& body) {
-		std::string result = "Hello from points post\n";
+		std::string result = "";
+		if (body.empty()) {
+			result = "Empty\n";
+			return result;
+		}
+		body.toString(result);
+		
+		rapidjson::Document doc_body;
+		doc_body.Parse(result.c_str());
+		
+		mongocxx::client conn{mongocxx::uri{}};
+    		bsoncxx::builder::stream::document point{};
+    		auto collection = conn["route_service"]["points"];
+    		point << "name" << doc_body["name"].GetString();
+    		collection.insert_one(point.view());
+
+		//result = doc_body["name"].GetString();
 		return result;
 	}
 
@@ -68,8 +93,7 @@ private:
 		if (method.compare(GET_METHOD) == 0) {
 			return handleGet();
 		}
-		std::string result = "Not found\n";
-		return result;
+		return NOT_FOUND;
 	}
 
 public:
@@ -97,8 +121,7 @@ private:
 		if (method.compare(POST_METHOD) == 0) {
 			return handlePost(body);
 		}
-		std::string result = "Not found\n";
-		return result;
+		return NOT_FOUND;
 	}
 
 public:
@@ -150,8 +173,7 @@ public:
 			RouteHandler h;
 			return h.handle(method, path, body);
 		}
-		std::string res = "Not found";
-		return res;
+		return NOT_FOUND;
 	}
 
 public:
@@ -167,7 +189,13 @@ public:
 		std::vector<std::string> parts = split(uri.substr(1));
 		std::string result = handle(meth, parts, body);
 		
-		request->write(result.c_str(), result.length());
+		if (result.compare(NOT_FOUND) == 0) {
+			request->setStatus(404);
+		}
+		else {
+			//request->setContentType("application/json");
+			request->write(result.c_str(), result.length());
+		}		
                 //request->setHeader("Route-Web-Service-Header", "Reply from HelloWorld");
         }
 
