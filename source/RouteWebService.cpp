@@ -38,6 +38,7 @@ const std::string DELETE_METHOD = "DELETE";
 const std::string NOT_FOUND = "NF";
 const std::string NO_CONTENT = "NC";
 const std::string NOT_MODIFIED = "NM";
+const std::string ALREADY_EXISTS = "AE";
 
 using bsoncxx::builder::stream::close_array;
 using bsoncxx::builder::stream::close_document;
@@ -103,6 +104,10 @@ public:
 		destination = names[1];
 	}
 
+	static std::string convertPointNamesToRelationName(const std::string& source, const std::string& dest) {
+		return source + "-" + dest;
+	}
+
 	static document buildSearchPointDocumentByRelation(const Relation& rel) {
 		document doc{};
 		doc << "name" << rel.source << "relations" << open_document
@@ -125,6 +130,24 @@ public:
 		return doc;
 	}
 
+
+	static document buildDeleteRelationPointDocument(const Relation& rel) {
+		document doc{};
+		doc << "$pull" << open_document << "relations" << open_document
+			<< "destination" << rel.destination << close_document << close_document;
+		return doc;
+	}
+
+	static document buildInsertRelationPointDocument(const Relation& rel) {
+		document doc{};
+		doc << "$push" << open_document << "relations" << open_document
+			<< "destination" << convertToValidName(rel.destination) 
+			<< "cost" << rel.cost 
+			<< "time" << rel.time
+			<< close_document << close_document;
+		return doc;
+	}
+
 	static document buildPointDocumentByBody(const fastcgi::DataBuffer& body) {
 		std::string request_body = "";
 		body.toString(request_body);
@@ -143,10 +166,29 @@ public:
 		return buildUpdatePointDocumentByName(name);		
 	}
 
+	static Relation getRelationFromRelationBody(const fastcgi::DataBuffer& body) {
+		std::string request_body = "";
+		body.toString(request_body);
+		rapidjson::Document doc_body;
+		doc_body.Parse(request_body.c_str());
+		Relation rel;
+		rel.source = doc_body["source"].GetString();
+		rel.destination = doc_body["destination"].GetString();
+		rel.cost = doc_body["cost"].GetInt();
+		rel.time = doc_body["time"].GetInt();
+		return rel;		
+	}	
+
 	static document buildSearchPointDocumentByRelationName(const std::string& name) {
 		Relation rel;
 		convertRelationNameToPointNames(name, rel.source, rel.destination);		
 		return buildSearchPointDocumentByRelation(rel);
+	}
+
+	static document buildUpdatePointDocumentByRelationName(const std::string& name) {
+		Relation rel;
+		convertRelationNameToPointNames(name, rel.source, rel.destination);		
+		return buildDeleteRelationPointDocument(rel);
 	}
 
 
@@ -281,7 +323,17 @@ private:
 	}
 
 	std::string handleDelete(const std::string& relation_id) {
+		mongocxx::client conn{mongocxx::uri{}};
+    		auto collection = conn["route_service"]["points"];
+		const auto& searchPoint = UtilHelper::buildSearchPointDocumentByRelationName(relation_id) << finalize;
+		const auto& updatePoint = UtilHelper::buildUpdatePointDocumentByRelationName(relation_id) << finalize;
+
+		const auto& result = collection.update_one(searchPoint.view(), updatePoint.view());
+    		if (result && (*result).matched_count() > 0) {
+			return "";
+		}
 		return NOT_FOUND;
+
 	}
 
 	std::string handleGet(const std::string& relation_id) {
@@ -389,8 +441,33 @@ public:
 class RelationsHandler {
 private:
 	std::string handlePost(const fastcgi::DataBuffer& body) {
-		std::string result = "Hello from relations\n";
-		return result;
+		if (body.empty()) {
+			return NO_CONTENT;
+		}
+		const auto& rel = UtilHelper::getRelationFromRelationBody(body);
+		const auto& searchExistingPoint = UtilHelper::buildSearchPointDocumentByRelation(rel) << finalize;
+		
+		mongocxx::client conn{mongocxx::uri{}};
+    		auto collection = conn["route_service"]["points"];
+
+		const auto& check_exist = collection.find_one(searchExistingPoint.view());
+    		if (check_exist) {
+			return ALREADY_EXISTS;
+		}
+		
+		const auto& searchPoint = UtilHelper::buildPointDocumentByName(rel.source) << finalize;
+		const auto& updatePoint = UtilHelper::buildInsertRelationPointDocument(rel) << finalize;
+
+    		const auto& upd_result = collection.update_one(searchPoint.view(), updatePoint.view());
+		if (upd_result && (*upd_result).matched_count() > 0) {
+			const auto& check_result = collection.find_one(searchExistingPoint.view());
+			if (check_result) {
+				Relation res = UtilHelper::extractRelationFromPointDocument((*check_result), UtilHelper::convertPointNamesToRelationName(rel.source, rel.destination));
+				return UtilHelper::buildJsonRelation(rel);
+			}
+		}
+
+		return NOT_MODIFIED;
 	}
 
 
@@ -462,6 +539,8 @@ public:
 			request->setStatus(204);
 		} else if (result.compare(NOT_MODIFIED) == 0) {
 			request->setStatus(304);
+		} else if (result.compare(ALREADY_EXISTS) == 0) {
+			request->setStatus(409);
 		} else {
 			request->setContentType("application/json");
 			request->write(result.c_str(), result.length());
