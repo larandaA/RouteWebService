@@ -29,6 +29,7 @@
 #include <vector>
 #include <cstdint>
 #include <iterator>
+#include <chrono>
 
 const std::string POST_METHOD = "POST";
 const std::string PUT_METHOD = "PUT";
@@ -86,6 +87,12 @@ public:
         		elems.push_back(item);
     		}
     		return elems;
+	}
+
+	static long long currentMillis() {
+		long long millis = std::chrono::duration_cast<std::chrono::milliseconds>
+			(std::chrono::system_clock::now().time_since_epoch()).count();
+		return millis;
 	}
 
 	static std::string convertToValidName(std::string name) {
@@ -148,6 +155,49 @@ public:
 		return doc;
 	}
 
+	static document buildInsertLM(const std::string& name) {
+		document doc{};
+		doc << "$push" << open_document << "lm" << open_document
+			<< "name" << convertToValidName(name)
+			<< "val" << currentMillis()
+			<< close_document << close_document;
+		return doc;
+	}
+
+	static document buildDeleteLM(const std::string& name) {
+		document doc{};
+		doc << "$pull" << open_document << "lm" << open_document
+			<< "name" << convertToValidName(name) << close_document << close_document;
+		return doc;
+	}
+
+	static document buildUpdateSetLM(const std::string& name) {
+		document doc{};
+		doc << "$set" << open_document << "lm.$" << open_document
+			<< "name" << convertToValidName(name)
+			<< "val" << currentMillis() << close_document << close_document;
+		return doc;
+	}
+
+	static document buildUpdateSearchLM(const std::string& name) {
+		document doc{};
+		doc << "lm.name" << convertToValidName(name);
+		return doc;
+	}
+
+	static document buildUpdateSearchRelationsAfterPointUpdate(const std::string& name) {
+		document doc{};
+		doc << "relations.destination" << convertToValidName(name);
+		return doc;
+	}
+
+	static document buildUpdateSetRelationsAfterPointUpdate(const std::string& name) {
+		document doc{};
+		doc << "$set" << open_document 
+			<< "relations.$.destination" << convertToValidName(name) << close_document;
+		return doc;
+	}
+
 	static document buildPointDocumentByBody(const fastcgi::DataBuffer& body) {
 		std::string request_body = "";
 		body.toString(request_body);
@@ -164,6 +214,15 @@ public:
 		doc_body.Parse(request_body.c_str());
 		std::string name = doc_body["name"].GetString();
 		return buildUpdatePointDocumentByName(name);		
+	}
+
+	static document buildUpdateSetRelationsAfterPointUpdateByBody(const fastcgi::DataBuffer& body) {
+		std::string request_body = "";
+		body.toString(request_body);
+		rapidjson::Document doc_body;
+		doc_body.Parse(request_body.c_str());
+		std::string name = doc_body["name"].GetString();
+		return buildUpdateSetRelationsAfterPointUpdate(name);		
 	}
 
 	static Relation getRelationFromRelationBody(const fastcgi::DataBuffer& body) {
@@ -188,6 +247,12 @@ public:
 	static document buildUpdatePointDocumentByRelationName(const std::string& name) {
 		Relation rel;
 		convertRelationNameToPointNames(name, rel.source, rel.destination);		
+		return buildDeleteRelationPointDocument(rel);
+	}
+
+	static document buildDeleteRelationPointDocumentByPointName(const std::string& name) {
+		Relation rel;
+		rel.destination = name;
 		return buildDeleteRelationPointDocument(rel);
 	}
 
@@ -226,6 +291,7 @@ public:
 		
 		return s.GetString();
 	}
+
 };
 
 class RouteHandler {
@@ -255,11 +321,19 @@ private:
 		mongocxx::client conn{mongocxx::uri{}};
     		auto collection = conn["route_service"]["points"];
 
+		const auto& check_exist = collection.find_one(searchNewPoint.view());
+		if (check_exist) {
+			return ALREADY_EXISTS;
+		}
+
 		const auto& result = collection.update_one(searchOldPoint.view(), updatePoint.view());
 
 		if (result && (*result).matched_count() > 0) {
 			const auto& result_check = collection.find_one(searchNewPoint.view());
 			if (result_check) {
+				const auto& searchUpdRels = UtilHelper::buildUpdateSearchRelationsAfterPointUpdate(point_id) << finalize;
+				const auto& setUpdRels = UtilHelper::buildUpdateSetRelationsAfterPointUpdateByBody(body) << finalize;
+				collection.update_many(searchUpdRels.view(), setUpdRels.view());
 				return bsoncxx::to_json(*result_check);
 			}
 			return NOT_MODIFIED;
@@ -285,6 +359,8 @@ private:
 		const auto& searchPoint = UtilHelper::buildPointDocumentByName(point_id) << finalize;
 		const auto& result = collection.delete_one(searchPoint.view());
     		if (result && (*result).deleted_count() > 0) {
+			const auto& deleteRels = UtilHelper::buildDeleteRelationPointDocumentByPointName(point_id) << finalize;
+			collection.update_many(document{} << finalize, deleteRels.view());
 			return "";
 		}
 		return NOT_FOUND;
@@ -445,17 +521,30 @@ private:
 			return NO_CONTENT;
 		}
 		const auto& rel = UtilHelper::getRelationFromRelationBody(body);
-		const auto& searchExistingPoint = UtilHelper::buildSearchPointDocumentByRelation(rel) << finalize;
+		
 		
 		mongocxx::client conn{mongocxx::uri{}};
     		auto collection = conn["route_service"]["points"];
 
+		const auto& searchPoint = UtilHelper::buildPointDocumentByName(rel.source) << finalize;
+		const auto& check_source_exist = collection.find_one(searchPoint.view());
+    		if (!check_source_exist) {
+			return NOT_FOUND;
+		}
+
+		const auto& searchDestPoint = UtilHelper::buildPointDocumentByName(rel.destination) << finalize;
+		const auto& check_dest_exist = collection.find_one(searchDestPoint.view());
+    		if (!check_dest_exist) {
+			return NOT_FOUND;
+		}
+
+
+		const auto& searchExistingPoint = UtilHelper::buildSearchPointDocumentByRelation(rel) << finalize;
 		const auto& check_exist = collection.find_one(searchExistingPoint.view());
     		if (check_exist) {
 			return ALREADY_EXISTS;
 		}
 		
-		const auto& searchPoint = UtilHelper::buildPointDocumentByName(rel.source) << finalize;
 		const auto& updatePoint = UtilHelper::buildInsertRelationPointDocument(rel) << finalize;
 
     		const auto& upd_result = collection.update_one(searchPoint.view(), updatePoint.view());
